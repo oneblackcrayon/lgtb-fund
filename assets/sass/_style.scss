@@ -1,0 +1,359 @@
+/* Colors */
+$brand-background-color: #f2f2f1;
+      $brand-text-color: #686c76;
+      $brand-grey-color: #3e3f42;
+
+
+        $sky-blue-color: #15aed8;
+      $royal-blue-color: #2a4697;
+            $grey-color: #9b9b9b;
+
+/* Links  */
+$link-color: #181F8F;
+$hover-link-color: #1188FF;
+$active-link-color: #1F88F1;
+$visited-link-color: #81F1F8;
+
+html {
+border: none;
+font-size: 16px;
+line-height: normal;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
+  @media screen and (min-width: 240px) and (max-width: 480px) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+body {
+background: $brand-background-color;
+font: {
+  family: Georgia, serif;
+}
+border: none;
+height: 100%;
+margin: auto;
+padding: 0;
+position: relative;
+text-align: center;
+width: 100%;
+}
+
+/* Global Headers */
+h1, article h1, section h1 {
+  font: {
+    size: 36px;
+    weight: 400;
+  }
+}
+
+h2 {
+  font: {
+    family: sans-serif;
+    size: 28px;
+    weight: 400;
+  }
+}
+
+h3 {
+  font: {
+    family: sans-serif;
+    size: 22px;
+    weight: 400;
+  }
+}
+
+h4, h5, h6 {
+  font: {
+    family: sans-serif;
+    weight: 400;
+  }
+}
+
+/* Global link styles */
+a, nav a {
+  &:link,
+  &:hover,
+  &:focus,
+  &:active, 
+  img {
+    outline: none;
+    text-decoration: none;
+    @include transition (color 0.2s ease-in-out,background-color 0.2s ease-in-out);
+  }
+}
+
+a {
+  color: $link-color;
+  &:link {
+    color: $link-color;
+  } 
+  &:hover,
+  &:focus,
+  &:visited:hover {
+    color: $hover-link-color;
+  }
+  &:active {
+    color: $active-link-color;
+  }
+  &:visited {
+    color: $visited-link-color;
+  }
+}
+
+:hover, :focus {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  @include transition (color 0.2s ease-in-out,background-color 0.2s ease-in-out);
+}
+
+::-moz-selection {
+  background: $sky-blue-color;
+  color: white;
+  text-shadow: none;
+}
+::selection {
+  background: $sky-blue-color;
+  color: white;
+  text-shadow: none;
+}
+mark {
+  background: $sky-blue-color;
+  color: white;
+  text-shadow: none;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+  }
+}
+svg {
+  overflow: hidden;
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
+
+/* Text elements */
+p, ol, ul, dl {
+margin-bottom: 0;
+}
+dt, dd {
+margin: 0;
+padding: 0;
+}
+blockquote, blockquote+blockquote {
+	& cite {
+	  font-style: normal;
+	}
+}
+
+/* Block elements */
+address {
+  font-style: normal;
+}
+article, aside, canvas, dialog, figcaption, figure, footer, header, main, menu, nav, section, summary, time {
+  position: relative;
+}
+audio, canvas, iframe, video {
+  display: inline-block;
+  *display: inline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+figure {
+  & img {
+    border: none;
+    outline: none;
+  }
+  figcaption {
+  }
+}
+
+.pagewrap {
+  z-index: 5;
+  zoom: 1;
+  > .header-wrapper {
+    z-index: 1;
+    zoom: 1;
+  }
+  > .main-wrapper,
+  > .footer-wrapper {
+    z-index: 4;
+    zoom: 1;
+  }
+}
+
+nav {
+  font: {
+    family: sans-serif;
+  }
+  text-align: left;
+}
+
+.scroll-arrow {
+  background-color: $brand-background-color;
+  color: $brand-grey-color;
+  font: {
+    family: sans-serif;
+    size: 12px;
+  }
+  & a {
+    color: $brand-grey-color;
+  }
+  & span {
+    display: block;
+    &.fa-arrow-down {
+      background-color: $brand-background-color;
+      border-radius: 50%;
+      color: $brand-text-color;
+      margin: 0 auto;
+      width: 60px;
+      line-height: 60px;
+      vertical-align: middle;
+      position: relative;
+      top: -20px;
+    }
+    &.text-center {
+      margin-top: -20px;
+    }
+  }
+}
+
+.bumper {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width:767px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header-wrapper, .main-wrapper, supporters-wrapper {
+margin: 0 auto;
+padding: 0;
+position: relative;
+width: 100%;
+}
+.header-wrapper {
+background-color: $grey-color;
+height: 100%;
+height: 100vh;
+margin-bottom: -60px;
+}
+
+.footer-wrapper {
+background-color: $royal-blue-color;
+color: white;
+font: {
+  family: sans-serif;
+}
+margin: 0 auto;
+padding: 0 0 40px;
+position: relative;
+width: 100%;
+  h1, p, blockquote, cite, dl, ul, ol {
+    color: white;
+  }
+  h2, h3, h4, h5, h6 {
+    color: $sky-blue-color;
+  }
+  & .copy i {
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  & .copy h6,
+  & .copy address, 
+  & .site-link {
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+  }
+  & .social-links a {
+    background-color: white;
+    border-radius: 50%;
+    color: $royal-blue-color;
+    display: inline-block;
+    line-height: 28px;
+    margin: 0 10px;
+    vertical-align: middle;
+    width: 28px;
+    & .fa {
+      color: $royal-blue-color;
+    }
+  }
+  & a {
+    color: white;
+  &:link,
+  &:hover,
+  &:focus,
+  &:visited:hover {
+    color: white;
+  }
+  &:active {
+    color: white;
+  }
+  &:visited {
+    color: white;
+  }
+}
+
+  hr {
+    border-top: 0px;
+  }
+}
+.about-wrapper,
+.help-wrapper,
+.community-wrapper {
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+}
+
+/*     About Wrapper */
+.about-wrapper {
+background-color: $brand-background-color;
+  h1, h2, h3, h4, h5, h6, p, blockquote, cite, dl, ul, ol {
+    color: $royal-blue-color;
+  }
+  & .lead-in {
+    color: $brand-text-color;
+  }
+  hr {
+    background-color: transparent;
+    border-top: 2px solid;
+    border-color: white;
+  }
+}
+/*      Help Wrapper */
+.help-wrapper {
+background-color: $sky-blue-color;
+  h1, p, blockquote, cite, dl, ul, ol {
+    color: white;
+  }
+  h2, h3, h4, h5, h6 {
+    color: $royal-blue-color;
+  }
+}
+/* Community Wrapper */
+.community-wrapper {
+background-color: $royal-blue-color;
+color: white;
+  h1, h2, h3, h4, h5, h6, p, blockquote, cite, dl, ul, ol {
+    color: white;
+  }
+}
