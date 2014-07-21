@@ -6710,7 +6710,7 @@ html {
 }
 
 body {
-  background: #f2f2f1;
+  background: #fffffe;
   font-family: Georgia, serif;
   border: none;
   height: 100%;
@@ -6722,21 +6722,28 @@ body {
 }
 
 /* Global Headers */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
 h1, article h1, section h1 {
-  font-size: 36px;
-  font-weight: 400;
+  font-family: "FrieghtTextMedium", Georgia, "Times New Roman", Times, serif;
+  font-size: 48px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 43px;
 }
 
 h2 {
-  font-family: sans-serif;
-  font-size: 28px;
-  font-weight: 400;
+  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 h3 {
-  font-family: sans-serif;
-  font-size: 22px;
-  font-weight: 400;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 h4, h5, h6 {
@@ -6818,6 +6825,11 @@ svg:not(:root) {
 
 /* Text elements */
 p, ol, ul, dl {
+  font-family: "FrieghtText", Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+p, ol, ul, dl {
   margin-bottom: 0;
 }
 
@@ -6855,8 +6867,23 @@ figure img {
 }
 
 .pagewrap {
+  background-color: #f2f2f1;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 1170px;
   z-index: 5;
   zoom: 1;
+}
+.pagewrap:before, .pagewrap:after {
+  content: " ";
+  display: table;
+}
+.pagewrap:after {
+  clear: both;
 }
 .pagewrap > .header-wrapper {
   z-index: 1;
@@ -6875,12 +6902,12 @@ nav {
 
 .scroll-arrow {
   background-color: #f2f2f1;
-  color: #3e3f42;
-  font-family: sans-serif;
+  color: #acacac;
+  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
 .scroll-arrow a {
-  color: #3e3f42;
+  color: #acacac;
 }
 .scroll-arrow span {
   display: block;
@@ -6888,7 +6915,7 @@ nav {
 .scroll-arrow span.fa-arrow-down {
   background-color: #f2f2f1;
   border-radius: 50%;
-  color: #686c76;
+  color: #7c8088;
   margin: 0 auto;
   width: 60px;
   line-height: 60px;
@@ -6898,6 +6925,15 @@ nav {
 }
 .scroll-arrow span.text-center {
   margin-top: -20px;
+}
+
+.logo {
+  display: block;
+  height: 190px;
+  position: absolute;
+  top: -107px;
+  left: 30px;
+  z-index: 6;
 }
 
 .bumper {
@@ -6924,6 +6960,62 @@ nav {
   height: 100%;
   height: 100vh;
   margin-bottom: -60px;
+  position: relative;
+}
+
+.carousel-indicators {
+  bottom: 260px;
+}
+
+.carousel-caption {
+  top: 50%;
+  bottom: 0;
+  padding-bottom: 30px;
+}
+
+.img-overlay {
+  margin: 0 auto;
+  position: relative;
+  top: -90%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .img-overlay {
+    top: -40%;
+    max-width: 50%;
+  }
+}
+
+.h1 {
+  color: #fffffe;
+  display: block;
+  font-family: "FrieghtTextMedium", Georgia, "Times New Roman", Times, serif;
+  font-size: 48px;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0px;
+  position: absolute;
+  right: 0;
+  bottom: 180px;
+  left: 0;
+}
+
+a.read-more {
+  color: #17bde1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.row.spacer {
+  margin-top: 0;
+}
+
+.spacer {
+  border-top: none;
+  margin-top: 43px;
+  margin-bottom: 43px;
 }
 
 .footer-wrapper {
@@ -6981,11 +7073,18 @@ nav {
 
 .about-wrapper,
 .help-wrapper,
-.community-wrapper {
+.community-wrapper,
+.committee-wrapper {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 77px 0;
   position: relative;
   width: 100%;
+}
+.about-wrapper p a,
+.help-wrapper p a,
+.community-wrapper p a,
+.committee-wrapper p a {
+  text-decoration: underline;
 }
 
 /*     About Wrapper */
@@ -6996,7 +7095,7 @@ nav {
   color: #2a4697;
 }
 .about-wrapper .lead-in {
-  color: #686c76;
+  color: #7c8088;
 }
 .about-wrapper hr {
   background-color: transparent;
@@ -7008,18 +7107,61 @@ nav {
 .help-wrapper {
   background-color: #15aed8;
 }
-.help-wrapper h1, .help-wrapper p, .help-wrapper blockquote, .help-wrapper cite, .help-wrapper dl, .help-wrapper ul, .help-wrapper ol {
+.help-wrapper h1, .help-wrapper p, .help-wrapper blockquote, .help-wrapper cite, .help-wrapper dl, .help-wrapper ul, .help-wrapper ol, .help-wrapper a {
   color: white;
 }
 .help-wrapper h2, .help-wrapper h3, .help-wrapper h4, .help-wrapper h5, .help-wrapper h6 {
   color: #2a4697;
 }
 
-/* Community Wrapper */
-.community-wrapper {
+/* Community, Supporters and Committee Wrapper */
+.community-wrapper,
+.supporters-wrapper,
+.committee-wrapper {
   background-color: #2a4697;
   color: white;
 }
-.community-wrapper h1, .community-wrapper h2, .community-wrapper h3, .community-wrapper h4, .community-wrapper h5, .community-wrapper h6, .community-wrapper p, .community-wrapper blockquote, .community-wrapper cite, .community-wrapper dl, .community-wrapper ul, .community-wrapper ol {
+.community-wrapper h1, .community-wrapper h2, .community-wrapper h3, .community-wrapper h4, .community-wrapper h5, .community-wrapper h6, .community-wrapper p, .community-wrapper blockquote, .community-wrapper cite, .community-wrapper dl, .community-wrapper ul, .community-wrapper ol, .community-wrapper a,
+.supporters-wrapper h1,
+.supporters-wrapper h2,
+.supporters-wrapper h3,
+.supporters-wrapper h4,
+.supporters-wrapper h5,
+.supporters-wrapper h6,
+.supporters-wrapper p,
+.supporters-wrapper blockquote,
+.supporters-wrapper cite,
+.supporters-wrapper dl,
+.supporters-wrapper ul,
+.supporters-wrapper ol,
+.supporters-wrapper a,
+.committee-wrapper h1,
+.committee-wrapper h2,
+.committee-wrapper h3,
+.committee-wrapper h4,
+.committee-wrapper h5,
+.committee-wrapper h6,
+.committee-wrapper p,
+.committee-wrapper blockquote,
+.committee-wrapper cite,
+.committee-wrapper dl,
+.committee-wrapper ul,
+.committee-wrapper ol,
+.committee-wrapper a {
   color: white;
 }
+
+.supporters-wrapper .community-portrait {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.supporters-wrapper .community-portrait > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+/* About and Supporters Wrapper */
