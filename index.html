@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" aria-describedby="document">
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" aria-describedby="document">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,6 +10,7 @@
 <title>&nbsp;</title>
 <link rel="stylesheet" href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<script src="assets/js/modernizr.js"></script>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/uyq6ddv.js"></script>
@@ -42,7 +43,7 @@
             
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <div class="item active"><img class="img-responsive" src="assets/images/women-ping-pong-paddles.jpg" alt="" /><div class="carousel-caption"><img class="img-overlay" src="assets/images/lgbt-fund-logo.png" alt="" /></div></div>
+                <div class="item active"><img class="img-responsive" src="assets/images/women-ping-pong-paddles.jpg" alt="" /><div class="carousel-caption"><img class="carousel-img-overlay" src="assets/images/lgbt-fund-logo.png" alt="" /></div></div>
                 <div class="item"><img class="img-responsive" src="assets/images/women-ping-pong-paddles.jpg" alt="" /><div class="carousel-caption">Image Two</div></div>
                 <div class="item"><img class="img-responsive" src="assets/images/women-ping-pong-paddles.jpg" alt="" /><div class="carousel-caption">Image Three</div></div>
               </div><!-- end /.carousel-inner -->
@@ -54,11 +55,11 @@
       
       <div class="main-wrapper">
         <main id="main" role="main">
-
-          <a href="#intro"><img class="logo hidden-xs hidden-sm" src="assets/images/our-grcf-logo.png" alt="Our Grand Rapids Community Foundation" /></a>
-
+          <a href="#intro">
+            <img class="logo hidden-sm hidden-xs" src="assets/images/our-grcf-logo.png" alt="Our Grand Rapids Community Foundation" />
+          </a>
           <div class="scroll-arrow">
-            <a href="javascript:void(0)">
+            <a href="#about-the-fund">
               <span class="fa fa-arrow-down fa-2x"></span>
               <span class="text-center">Scroll to find out more.</span>
             </a>
@@ -69,64 +70,88 @@
               <div class="container">
                 <div class="row spacer">
                   <div class="col-sm-6 col-sm-offset-3 col-md-6 col-sm-offset-3 col-lg-8 col-lg-offset-2">
-                    <header>
-                      <h1>About the Fund</h1>
+                    <header class="bumper">
+                      <h1 id="about-the-fund">About the Fund</h1>
                     </header><!-- end /header -->
                     <p class="lead-in">Our LGBT Fund was established by Shelley Padnos and Carol Sarosik, a West Michigan couple who chose to spearhead changes in the community after attending OutGiving, a LGBT philanthropic conference sponsored by the Gill Foundation. Inspired by the conference and the insight that the LGBT community needs to initiate support for LGBT issues, they partnered with the Grand Rapids Community Foundation to lead the charge against issues faced by LGBT youth.</p>
                   </div><!-- end /article column -->
                 </div><!-- end /.row -->
               </div><!-- end /.container -->
-            
               <hr class="clear">
-            
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-lg-3 col-md-6 col-sm-3 col-xs-12">
-                    <aside><!-- Semantic sectioning of content -->
-                      <div class="off-section bumper">
+                  <div class="about-fx" id="fx-4">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <aside class="fx-container"><!-- Semantic sectioning of content -->
+                      <div class="fx-container-inner">
                         <h3>Grand Rapids Community Foundation</h3>
                         <p>Find out why the Community Foundation is involved.</p>
-<p>The Community Foundation exists to build and manage our community’s permanent endowment and lead the community to strengthen the lives of its people. That’s why we are pleased to announce Our LGBT Fund, a brand new initiative to support LGBT people in our region.</p>
-                        <span class="fa"></span>
-                        <a class="read-more" href="javascript:void(0)">Read More</a>
-                      </div>
-                    </aside><!-- end /section -->
+                        <span class="icon icon-flower icon-blue"></span>
+                        <a class="read-more" href="#panel1">Read More</a>
+                      </div><!-- end /.fx-container-inner -->
+                      <div class="overlay" id="panel1">
+                        <div class="overlay-inner">
+                        <h3>Grand Rapids Community Foundation</h3>
+                        <p>The Community Foundation exists to build and manage our community’s permanent endowment and lead the community to strengthen the lives of its people. That’s why we are pleased to announce Our LGBT Fund, a brand new initiative to support LGBT people in our region.</p>
+                        <a class="close-overlay">&times;</a>
+                        </div>
+                      </div><!-- end /.overlay -->
+                    </aside><!-- end /aside.fx-container -->
                   </div><!-- end /section column -->
-                  <div class="col-lg-3 col-md-6 col-sm-3 col-xs-12">
-                    <aside><!-- Semantic sectioning of content -->
-                      <div class="off-section bumper">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <aside class="fx-container"><!-- Semantic sectioning of content -->
+                      <div class="fx-container-inner">
                         <h3>Purpose</h3>
                         <p>Find out our purpose behind the fund.</p>
-<p>Provide a safe, welcoming and healthy environment for the LGBT community in West Michigan by increasing wellness and prosperity levels, visibility, acceptance, support and access to resources.</p>
-                        <span class="fa"></span>
-                        <a class="read-more" href="javascript:void(0)">Read More</a>
-                      </div>
-                    </aside><!-- end /section -->
+                        <span class="icon icon-heart icon-blue"></span>
+                        <a class="read-more" href="#panel2">Read More</a>
+                      </div><!-- end /.fx-container-inner -->
+                      <div class="overlay" id="panel2">
+                        <div class="overlay-inner">
+                          <h3>Purpose</h3>
+                          <p>Provide a safe, welcoming and healthy environment for the LGBT community in West Michigan by increasing wellness and prosperity levels, visibility, acceptance, support and access to resources.</p>
+                          <a class="close-overlay">&times;</a>
+                        </div><!-- end /.overlay-inner -->
+                      </div><!-- end /.overlay -->
+                    </aside><!-- end /aside.fx-container -->
                   </div><!-- end /section column -->
-                  <div class="col-lg-3 col-md-6 col-sm-3 col-xs-12">
-                    <aside><!-- Semantic sectioning of content -->
-                      <div class="off-section bumper">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <aside class="fx-container"><!-- Semantic sectioning of content -->
+                      <div class="fx-container-inner">
                         <h3>Vision</h3>
                         <p>Find out what our vision is for this fund is.</p>
-<p>Create equal opportunity for the LGBT community. With an initial focus on homeless youth in West Michigan, the Fund will accomplish its work by increasing the capacity of existing service providers and leveraging relationships within the LGBT community and with straight allies.</p>
-
-                        <span class="fa"></span>
-                        <a class="read-more" href="javascript:void(0)">Read More</a>
-                      </div>
-                    </aside><!-- end /section -->
+                        <span class="icon icon-bulb icon-blue"></span>
+                        <a class="read-more" href="#panel3">Read More</a>
+                      </div><!-- end /.fx-container-inner -->
+                      <div class="overlay" id="panel3">
+                        <div class="overlay-inner">
+                          <h3>Vision</h3>
+                          <p>Create equal opportunity for the LGBT community. With an initial focus on homeless youth in West Michigan, the Fund will accomplish its work by increasing the capacity of existing service providers and leveraging relationships within the LGBT community and with straight allies.</p>
+                          <a class="close-overlay">&times;</a>
+                        </div><!-- end /.overlay-inner -->                        
+                      </div><!-- end /.overlay -->
+                    </aside><!-- end /aside.fx-container -->
                   </div><!-- end /section column -->
-                  <div class="col-lg-3 col-md-6 col-sm-3 col-xs-12">
-                    <aside><!-- Semantic sectioning of content -->
-                      <div class="off-section bumper">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <aside class="fx-container"><!-- Semantic sectioning of content -->
+                      <div class="fx-container-inner">
                         <h3>Needs</h3>
                         <p>Find out about the community need for the fund.</p>
-<p>Our LGBT Fund will help us understand the scope of LGBT challenges in the community and find ways to address them. We will also concentrate on filling the gap in LGBT leadership at the state and community levels.</p>
-
-                        <span class="fa"></span>
-                        <a class="read-more" href="javascript:void(0)">Read More</a>
-                      </div>
-                    </aside><!-- end /section -->
+                        <span class="icon icon-puzzle icon-blue"></span>
+                        <a class="read-more" href="#panel4">Read More</a>
+                      </div><!-- end /.fx-container-inner -->
+                      <div class="overlay" id="panel4">
+                        <div class="overlay-inner">
+                          <h3>Needs</h3>
+                          <p>Our LGBT Fund will help us understand the scope of LGBT challenges in the community and find ways to address them. We will also concentrate on filling the gap in LGBT leadership at the state and community levels.</p>
+                          <a class="close-overlay">&times;</a>
+                        </div><!-- end /.overlay-inner -->
+                      </div><!-- end /.overlay -->
+                    </aside><!-- end /aside.fx-container -->
                   </div><!-- end /section column -->
+                  </div><!-- end /.about-fx -->
+                
+                
                 </div><!-- end /.row -->
               </div><!-- end /.container-fluid -->
             </article><!-- end /article -->
@@ -141,30 +166,27 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <section class="bumper">
                     <h2>Support Us</h2>
-                    <span class="fa"></span>
+                    <span class="icon icon-white icon-coin"></span>
                     <p><a href="javascript:void(0)">Support this cause today</a> by contributing to Our LGBT Fund now. All contributions will be kept in West Michigan and are 100% tax-deductible.<br /><a href="javascript:void(0)">Give now!</a></p>
                   </section><!-- end /section.bumper -->
                 </div><!-- end /column -->
-              
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <section class="bumper">
                     <h2>Spread the word</h2>
-                    <span class="fa"></span>
+                    <span class="icon icon-white icon-chat"></span>
                     <p>Help us reach out to area businesses, organizations and straight allies to spread the news about the fund and the community needs it addresses. <a href="javascript:void(0)">Contact us</a> to find out more.<br /><a href="javascript:void(0)">Like us on Facebook!</a></p>
                   </section><!-- end /section.bumper -->
                 </div><!-- end /column -->
-              
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                   <section class="bumper">
                     <h2>Join the party!</h2>
-                    <span class="fa"></span>
+                    <span class="icon icon-white icon-paddle"></span>
                     <p>A minimum contribution of $50 gives you entrance to our fabulous Ping-Pong party this fall. Help us celebrate our fundraising success with great music, food and Ping-Pong!<br /><a href="javascript:void(0)">Give now!</a></p>
                   </section><!-- end /section.bumper -->
                 </div><!-- end /column -->
               </div><!-- end /.row -->
             </article><!-- end /article.container -->
           </div><!-- end /.help-wrapper -->
-          
           <div class="community-wrapper" id="community">
             <div class="container">
               <div class="row">
@@ -172,54 +194,203 @@
                   <header>
                     <h1>Our Community</h1>
                   </header><!-- end /header -->
-                  <p>Time for acceptance, equality and prosperity for our LGBT community. This is our home, where we work, support local businesses, take care of our friends and neighbors and raise our families. And now it’s time to take care of each other, too. Join these local community residents in supporting Our LGBT Fund and show your support at our upcoming ping-pong party to celebrate our success!</p>
+                  <p class="lead-in">Time for acceptance, equality and prosperity for our LGBT community. This is our home, where we work, support local businesses, take care of our friends and neighbors and raise our families. And now it’s time to take care of each other, too. Join these local community residents in supporting Our LGBT Fund and show your support at our upcoming ping-pong party to celebrate our success!</p>
                 </article><!-- end /article -->
               </div><!-- end /.row -->
             </div><!-- end /.container -->
           </div><!-- end /.community-wrapper -->
-          
           <div class="supporters-wrapper" id="supporters">
             <div class="container-fluid">
-              <div class="row">
-                <figure class="community-portrait">
-                  <img data-src="holder.js/100%x200/vine" alt="" />
-                  <figcaption>
-                    <div class="portrait-hover">
-                      Caption
-                    </div>
-                  </figcaption>
-                </figure><!-- /end .figure -->
-                
-                <figure class="community-portrait">
-                  <img data-src="holder.js/100%x200/vine" alt="" />
-                  <figcaption>
-                    <div class="portrait-hover">
-                      Caption
-                    </div>
-                  </figcaption>
-                </figure><!-- /end .figure -->
-                
-                <figure class="community-portrait">
-                  <img data-src="holder.js/100%x200/vine" alt="" />
-                  <figcaption>
-                    <div class="portrait-hover">
-                      Caption
-                    </div>
-                  </figcaption>
-                </figure><!-- /end .figure -->
-                
-                <figure class="community-portrait">
-                  <img data-src="holder.js/100%x200/vine" alt="" />
-                  <figcaption>
-                    <div class="portrait-hover">
-                      Caption
-                    </div>
-                  </figcaption>
-                </figure><!-- /end .figure -->
-              </div><!-- /end .row -->
-            </div><!-- /end .container-fluid -->
+              <div id="fx-1" class="fx clearfix">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                </div><!-- end /.row -->
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                </div><!-- end /.row -->
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="img">
+                      <img src="assets/images/fpo-grid.jpg" alt="">
+                      <div class="overlay">
+                        <div class="caption-wrapper"><!-- vertically center everything -->
+                        <div class="caption">
+                          <h3>Supporter Name</h3>
+                          <p><i>Grand Rapids Resident</i></p>
+                          <p>I am involved because I am an advocate for LGBT youth in Grand Rapids</p>
+                          <a class="close-overlay hidden">&times;</a>
+                        </div><!-- end /.caption-overlay -->
+                        </div><!-- end /.caption -->
+                      </div><!-- end /.overlay -->
+                    </div><!-- end /.img -->
+                  </div><!-- end .col -->
+                </div><!-- end /.row -->
+              </div>
+            </div><!-- end /.container -->
           </div><!-- end /.supporters-wrapper -->
-
           <div class="committee-wrapper" id="committee">
             <div class="container">
               <div class="row">
@@ -227,7 +398,7 @@
                   <header>
                     <h1>Our committee</h1>
                   </header><!-- end /header -->
-                  <p>Shelley Padnos, Carol Sarosik, Sue Conway, Steve Conway, Lisa Costanza, Jill May, Andrew Milauckas, Dottie Rhodes, Leandro Robles and Kate Wolters</p>
+                  <p class="lead-in">Shelley Padnos, Carol Sarosik, Sue Conway, Steve Conway, Lisa Costanza, Jill May, Andrew Milauckas, Dottie Rhodes, Leandro Robles and Kate Wolters</p>
                 </article><!-- end /article -->
               </div><!-- end /.row -->
             </div><!-- end /.container -->
@@ -236,11 +407,11 @@
 
             <div class="container">
               <div class="row">
-                <article class="col-sm-6 col-sm-offset-3 col-md-6 col-sm-offset-3 col-lg-8 col-lg-offset-2">
+                <article class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
                   <header>
                     <h1>Become a sponsor</h1>
                   </header><!-- end /header -->
-                  <p>As an advocate in the LGBT community, we need your help to make this happen.<br />Sponsors will benefit from exposure in a variety of campaign related collateral materials which include getting highlighed on this site and in our brochure, <a href="javascript:void(0)">Facebook page</a>, special event invitations and customized emails. The campaign kicks off this summer and concludes with an exclusive Ping-Pong party in this Fall. Contact Jan Burns from the Grand Rapids Community Foundation at 616.454.1751 or via email at <a href="javascript:void(0)">jburns@grfoundation.org</a> today!</p>
+                  <p class="lead-in">As an advocate in the LGBT community, we need your help to make this happen.<br />Sponsors will benefit from exposure in a variety of campaign related collateral materials which include getting highlighed on this site and in our brochure, <a href="javascript:void(0)">Facebook page</a>, special event invitations and customized emails. The campaign kicks off this summer and concludes with an exclusive Ping-Pong party in this Fall. Contact Jan Burns from the Grand Rapids Community Foundation at 616.454.1751 or via email at <a href="javascript:void(0)">jburns@grfoundation.org</a> today!</p>
                 </article><!-- end /article -->
               </div><!-- end /.row -->              
 
@@ -265,7 +436,7 @@
             <hr class="clear">
         
             <div class="social-links">
-              <a href="javascript:void(0)"><span class="fa fa-facebook"></span></a><a href="javascript:void(0)"><span class="fa fa-twitter"></span></a>
+              <a href="javascript:void(0)"><span class="icon icon-white icon-facebook2"></span></a>
             </div><!-- end /.social-links -->
           </div><!-- end /.container -->
         </footer>
@@ -278,6 +449,18 @@
 <script src="assets/js/jquery.mobile.custom.min.js"></script>
 <script>
 $(document).ready(function() {
+
+  $('body a').click(function(event) { // the elements you click to scroll
+    event.preventDefault();
+    var link = this; // you need this if you are using hash links on ex: a href="#link" to id="link"
+    $.smoothScroll({
+      offset: 1, // adjusts where the scroll will stop so the height of the scrolling element plus the height of the element you are scrolling to.
+      speed: 1000,
+      scrollTarget: link.hash
+    });
+  });
+
+
   $('.carousel').carousel({
     interval: false
   });
@@ -288,7 +471,50 @@ $(document).ready(function() {
   $(".carousel").swipeleft(function() {
     $(this).carousel('next');
   });
-}); 
+});
+
+$(document).ready(function(){
+  if (Modernizr.touch) {
+    // show the close overlay button
+    $(".close-overlay").removeClass("hidden");
+    // handle the adding of hover class when clicked
+    $(".img").click(function(e){
+        if (!$(this).hasClass("hover")) {
+            $(this).addClass("hover");
+        }
+    });
+    $(".fx-container").click(function(e){
+        if (!$(this).hasClass("hover")) {
+            $(this).addClass("hover");
+        }
+    });
+    // handle the closing of the overlay
+    $(".close-overlay").click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if ($(this).closest(".img").hasClass("hover")) {
+            $(this).closest(".img").removeClass("hover");
+        }
+    });
+  } else {
+    // handle the mouseenter functionality
+    $(".img").mouseenter(function(){
+        $(this).addClass("hover");
+    })
+    // handle the mouseleave functionality
+    .mouseleave(function(){
+        $(this).removeClass("hover");
+    });
+    $(".fx-container").mouseenter(function(){
+        $(this).addClass("hover");
+    })
+        .mouseleave(function(){
+        $(this).removeClass("hover");
+    });
+
+  }
+});
+
 </script>
   </body>
 </html>
