@@ -6955,24 +6955,13 @@ figure img {
 
 .pagewrap {
   background-color: #f2f2f1;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0px;
-  padding-right: 0px;
   padding-right: 0;
   padding-left: 0;
-  max-width: 1170px;
+  max-width: 100%;
   z-index: 5;
   zoom: 1;
 }
-.pagewrap:before, .pagewrap:after {
-  content: " ";
-  display: table;
-}
-.pagewrap:after {
-  clear: both;
-}
-.pagewrap > .header-wrapper {
+.pagewrap > .header-wrapper1 {
   z-index: 1;
   zoom: 1;
 }
@@ -6982,9 +6971,51 @@ figure img {
   zoom: 1;
 }
 
-nav {
+nav > * {
   font-family: sans-serif;
   text-align: left;
+}
+
+.header-wrapper, .main-wrapper, supporters-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.header-wrapper {
+  background-color: #f2f2f1;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  margin: auto;
+}
+
+.carousel-indicators {
+  bottom: 30%;
+}
+
+.carousel-caption {
+  top: 50%;
+  bottom: 0;
+  padding-bottom: 30px;
+}
+
+.carousel-img-overlay {
+  margin: 0 auto;
+  position: relative;
+  top: -90%;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .carousel-img-overlay {
+    top: -100%;
+    max-width: 25%;
+  }
+}
+
+.slider-wrapper {
+  position: relative;
 }
 
 .scroll-arrow {
@@ -6995,6 +7026,12 @@ nav {
 }
 .scroll-arrow a {
   color: #acacac;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+.scroll-arrow a:hover {
+  color: #2a4697;
 }
 .scroll-arrow span {
   display: block;
@@ -7009,6 +7046,12 @@ nav {
   vertical-align: middle;
   position: relative;
   top: -20px;
+}
+.scroll-arrow span.fa-arrow-down:hover {
+  background-origin: padding-box;
+  background-clip: padding-box;
+  background-color: #15aed8;
+  color: #7c8088;
 }
 .scroll-arrow span.text-center {
   margin-top: -20px;
@@ -7039,44 +7082,6 @@ nav {
   }
 }
 
-.header-wrapper, .main-wrapper, supporters-wrapper {
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  width: 100%;
-}
-
-.header-wrapper {
-  background-color: #9b9b9b;
-  height: 100%;
-  height: 100vh;
-  margin-bottom: -60px;
-  position: relative;
-}
-
-.carousel-indicators {
-  bottom: 260px;
-}
-
-.carousel-caption {
-  top: 50%;
-  bottom: 0;
-  padding-bottom: 30px;
-}
-
-.carousel-img-overlay {
-  margin: 0 auto;
-  position: relative;
-  top: -90%;
-  text-align: center;
-}
-@media (max-width: 767px) {
-  .carousel-img-overlay {
-    top: -40%;
-    max-width: 50%;
-  }
-}
-
 .h1 {
   color: #fffffe;
   display: block;
@@ -7087,8 +7092,16 @@ nav {
   margin: 0px;
   position: absolute;
   right: 0;
-  bottom: 180px;
+  bottom: 20%;
   left: 0;
+}
+@media (max-width: 767px) {
+  .h1 {
+    font-size: 2em;
+    right: 0;
+    bottom: 20%;
+    left: 0;
+  }
 }
 
 a.read-more {
@@ -7189,78 +7202,6 @@ a.read-more {
   border-top: 2px solid;
   border-color: white;
   margin-bottom: 0;
-}
-
-/*      Help Wrapper */
-.help-wrapper {
-  background-color: #15aed8;
-}
-.help-wrapper h1, .help-wrapper p, .help-wrapper blockquote, .help-wrapper cite, .help-wrapper dl, .help-wrapper ul, .help-wrapper ol, .help-wrapper a {
-  color: white;
-}
-.help-wrapper h2, .help-wrapper h3, .help-wrapper h4, .help-wrapper h5, .help-wrapper h6 {
-  color: #2a4697;
-}
-.help-wrapper h2 {
-  padding-bottom: 25px;
-}
-.help-wrapper p {
-  padding-top: 25px;
-}
-@media (max-width: 767px) {
-  .help-wrapper p {
-    margin-bottom: 77px;
-  }
-}
-
-/* Community, Supporters and Committee Wrapper */
-.community-wrapper,
-.supporters-wrapper,
-.committee-wrapper {
-  background-color: #2a4697;
-  color: white;
-}
-.community-wrapper h1, .community-wrapper h2, .community-wrapper h3, .community-wrapper h4, .community-wrapper h5, .community-wrapper h6, .community-wrapper p, .community-wrapper blockquote, .community-wrapper cite, .community-wrapper dl, .community-wrapper ul, .community-wrapper ol, .community-wrapper a,
-.supporters-wrapper h1,
-.supporters-wrapper h2,
-.supporters-wrapper h3,
-.supporters-wrapper h4,
-.supporters-wrapper h5,
-.supporters-wrapper h6,
-.supporters-wrapper p,
-.supporters-wrapper blockquote,
-.supporters-wrapper cite,
-.supporters-wrapper dl,
-.supporters-wrapper ul,
-.supporters-wrapper ol,
-.supporters-wrapper a,
-.committee-wrapper h1,
-.committee-wrapper h2,
-.committee-wrapper h3,
-.committee-wrapper h4,
-.committee-wrapper h5,
-.committee-wrapper h6,
-.committee-wrapper p,
-.committee-wrapper blockquote,
-.committee-wrapper cite,
-.committee-wrapper dl,
-.committee-wrapper ul,
-.committee-wrapper ol,
-.committee-wrapper a {
-  color: white;
-}
-
-.supporters-wrapper .community-portrait {
-  margin: 0;
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
-}
-.supporters-wrapper .community-portrait > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
 }
 
 /* About and Supporters Wrapper */
@@ -7475,4 +7416,164 @@ a.read-more {
 }
 .caption-wrapper .caption p {
   margin-bottom: 25px;
+}
+
+/*      Help Wrapper */
+.help-wrapper {
+  background-color: #15aed8;
+}
+.help-wrapper h1, .help-wrapper p, .help-wrapper blockquote, .help-wrapper cite, .help-wrapper dl, .help-wrapper ul, .help-wrapper ol, .help-wrapper a {
+  color: white;
+}
+.help-wrapper h2, .help-wrapper h3, .help-wrapper h4, .help-wrapper h5, .help-wrapper h6 {
+  color: #2a4697;
+}
+.help-wrapper h2 {
+  padding-bottom: 25px;
+}
+.help-wrapper p {
+  padding-top: 25px;
+}
+@media (max-width: 767px) {
+  .help-wrapper p {
+    margin-bottom: 77px;
+  }
+}
+
+/* Community, Supporters and Committee Wrapper */
+.community-wrapper,
+.supporters-wrapper,
+.committee-wrapper {
+  background-color: #2a4697;
+  color: white;
+}
+.community-wrapper h1, .community-wrapper h2, .community-wrapper h3, .community-wrapper h4, .community-wrapper h5, .community-wrapper h6, .community-wrapper p, .community-wrapper blockquote, .community-wrapper cite, .community-wrapper dl, .community-wrapper ul, .community-wrapper ol, .community-wrapper a,
+.supporters-wrapper h1,
+.supporters-wrapper h2,
+.supporters-wrapper h3,
+.supporters-wrapper h4,
+.supporters-wrapper h5,
+.supporters-wrapper h6,
+.supporters-wrapper p,
+.supporters-wrapper blockquote,
+.supporters-wrapper cite,
+.supporters-wrapper dl,
+.supporters-wrapper ul,
+.supporters-wrapper ol,
+.supporters-wrapper a,
+.committee-wrapper h1,
+.committee-wrapper h2,
+.committee-wrapper h3,
+.committee-wrapper h4,
+.committee-wrapper h5,
+.committee-wrapper h6,
+.committee-wrapper p,
+.committee-wrapper blockquote,
+.committee-wrapper cite,
+.committee-wrapper dl,
+.committee-wrapper ul,
+.committee-wrapper ol,
+.committee-wrapper a {
+  color: white;
+}
+
+.supporters-wrapper .community-portrait {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+.supporters-wrapper .community-portrait > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+a.nav-expander {
+  background: none repeat scroll 0 0 #ffffff;
+  color: #2d2f33;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 15px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: right 0.4s ease-in-out 0s;
+  width: 50px;
+  z-index: 12;
+  transition: left 0.4s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+
+a.nav-expander:hover {
+  cursor: pointer;
+}
+
+a.nav-expander.fixed {
+  position: fixed;
+}
+
+.nav-expanded a.nav-expander.fixed {
+  left: 15em;
+}
+
+nav {
+  background: #acacac;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: -15em;
+  width: 15em;
+  z-index: 2000;
+  transition: left 0.0s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+
+.nav-expanded nav {
+  left: 0;
+}
+
+body.nav-expanded {
+  margin-right: 0em;
+  margin-left: 0em;
+  transition: left 0.4s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+
+#nav-close {
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.main-menu {
+  padding-top: 12px;
+}
+
+.main-menu li {
+  display: block;
+}
+
+.main-menu li a {
+  display: block;
+  padding: 12px;
+}
+
+.main-menu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
 }
