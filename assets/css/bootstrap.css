@@ -7269,6 +7269,7 @@ body.nav-expanded {
 
 .carousel-caption {
   font-size: 2em;
+  text-shadow: none;
 }
 
 .carousel .item {
