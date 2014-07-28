@@ -867,6 +867,15 @@ aside.supporters {
         -webkit-transform: translateY(-25%) translateX(0%);
         -moz-transform: translateY(-25%) translateX(0%);
         transform: translateY(-25%) translateX(0%);
+        
+        & h3 {
+          font-size: 14px;
+        }
+        
+        & p {
+          font-size: 13px;
+        }
+        
       }
     }
   }
