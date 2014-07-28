@@ -408,17 +408,19 @@ color: #2d2f33;
 display: block;
 font-size: 15px;
 font-weight: 400;
-height: 50px;
+height: 46px;
 margin-right: 0;
-padding: 4px;
+padding: 0;
 position: absolute;
-top: 20px;
-left: 20px;
+top: 15px;
+left: 15px;
 text-decoration: none;
 text-transform: uppercase;
-transition: right 0.4s ease-in-out 0s;
-width: 50px;
+vertical-align: middle;
+width: 48px;
 z-index: 12;
+
+// transition: right 0.4s ease-in-out 0s;
 
 transition: left 0.4s ease-in-out 0s;
 -webkit-transition: left 0.4s ease-in-out 0s;
@@ -428,7 +430,23 @@ transition: left 0.4s ease-in-out 0s;
 }
 a.nav-expander:hover {
 cursor: pointer;
+background-color: black;
+color: white;
+transition: all 0.4s ease-in-out 0s;
+-webkit-transition: all 0.4s ease-in-out 0s;
+-moz-transition: all 0.4s ease-in-out 0s;
+-o-transition: all 0.4s ease-in-out 0s;
+
+
+  & #hamburger-icon .line {
+    background-color: white;
+transition: all 0.4s ease-in-out 0s;
+-webkit-transition: all 0.4s ease-in-out 0s;
+-moz-transition: all 0.4s ease-in-out 0s;
+-o-transition: all 0.4s ease-in-out 0s;
+  }
 }
+
 a.nav-expander.fixed {
 position: fixed;
 }
@@ -487,21 +505,22 @@ padding-top: 12px;
 
 // codepen.io/chanjohnathan/pen/EqGnf
 #hamburger-icon {
-  width: 24px;
-  height: 18px;
+  width: 16px;
+  height: 12px;
   position: relative;
   display: block;
   margin: auto;
-  top: 10px;
+  top: 16px;
+  left: 0;
 }
 #hamburger-icon .line {
   display: block;
   background: #000001;
-  width: 25px;
-  height: 4px;
+  width: 18px;
+  height: 2px;
   position: absolute;
   left: 0;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -516,17 +535,17 @@ padding-top: 12px;
   top: 100%;
 }
 #hamburger-icon.active .line-1 {
-  transform: translateY(9px) translateX(0) rotate(45deg);
-  -webkit-transform: translateY(9px) translateX(0) rotate(45deg);
-  -moz-transform: translateY(9px) translateX(0) rotate(45deg);
+  transform: translateY(6px) translateX(0) rotate(45deg);
+  -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
+  -moz-transform: translateY(6px) translateX(0) rotate(45deg);
 }
 #hamburger-icon.active .line-2 {
   opacity: 0;
 }
 #hamburger-icon.active .line-3 {
-  transform: translateY(-9px) translateX(0) rotate(-45deg);
-  -webkit-transform: translateY(-9px) translateX(0) rotate(-45deg);
-  -moz-transform: translateY(-9px) translateX(0) rotate(-45deg);
+  transform: translateY(-6px) translateX(0) rotate(-45deg);
+  -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
+  -moz-transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
  
 
@@ -591,11 +610,12 @@ color: $brand-grey-color;
   }
   & a {
     color: $brand-grey-color;
+    font-weight: 700;
     display: block;
     position: relative;
     z-index: 5;
     &:hover {
-      color: $royal-blue-color;
+      color: $brand-text-color;
     }
   }
   & span {
@@ -614,7 +634,7 @@ color: $brand-grey-color;
         background-origin: padding-box;
         background-clip: padding-box;
         background-color: $sky-blue-color;
-        color: $brand-text-color;
+        color: white;
       }
     }
     &.text-center {
