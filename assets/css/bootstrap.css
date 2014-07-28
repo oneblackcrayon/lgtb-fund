@@ -6986,6 +6986,11 @@ span.read-more,
   text-transform: uppercase;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 65px;
+  right: 25%;
+  left: 25%;
 }
 span.read-more a.bx-next,
 .read-more a.bx-next {

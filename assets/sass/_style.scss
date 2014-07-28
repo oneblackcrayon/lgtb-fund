@@ -311,7 +311,13 @@ span.read-more,
   font: {
     family: "brandon-grotesque", $font-family-sans-serif;
     size: 14px;
+    weight: 700;
   }
+  position: absolute;
+  bottom: 65px;
+  right: 25%;
+  left: 25%;
+
   & a.bx-next {
     color: #17bde1 !important;
     display: inline-block;
