@@ -154,7 +154,7 @@ svg {
 /* Text elements */
 p, ol, ul, dl {
   font: {
-    family: 'FrieghtText', $font-family-serif;
+    family: 'freight-text-pro', $font-family-serif;
     size: 18px;
   }
 }
@@ -702,6 +702,8 @@ padding-bottom: 0;
     text-decoration: upppercase;
     font: {
       family: "brandon-grotesque", $font-family-sans-serif;
+      weight: 700;
+      size: 16px;
     }
   }
 

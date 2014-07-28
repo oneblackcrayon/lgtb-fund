@@ -6825,7 +6825,7 @@ svg:not(:root) {
 
 /* Text elements */
 p, ol, ul, dl {
-  font-family: "FrieghtText", Georgia, "Times New Roman", Times, serif;
+  font-family: "freight-text-pro", Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
 
@@ -7418,6 +7418,8 @@ article.about hr {
   margin-bottom: 30px;
   text-decoration: upppercase;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
 }
 .slide-padding > p {
   margin-top: 30px;
