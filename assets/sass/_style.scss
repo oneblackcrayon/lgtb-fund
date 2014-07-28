@@ -31,7 +31,7 @@ vertical-align: baseline;
 body {
 background-color: $brand-background-color;
 font: {
-  family: 'freight-text-pro', Georgia, serif;
+  family: 'freight-text-pro', $font-family-serif;
 }
 border: none;
 height: 100%;
@@ -619,11 +619,12 @@ color: $brand-grey-color;
 // About the Fund
 article.about {
 background-color: $brand-background-color;
+color: $brand-text-color;
 padding-bottom: 0;
   h1, h2, h3, h4, h5, h6, p, blockquote, cite, dl, ul, ol {
     color: $royal-blue-color;
   }
-  & .lead-in {
+  .lead-in {
     color: $brand-text-color;
   }
   hr {

@@ -6711,7 +6711,7 @@ html {
 
 body {
   background-color: #f2f2f1;
-  font-family: 'freight-text-pro', Georgia, serif;
+  font-family: "freight-text-pro", Georgia, "Times New Roman", Times, serif;
   border: none;
   height: 100%;
   margin: auto;
@@ -7341,6 +7341,7 @@ body.nav-expanded {
 
 article.about {
   background-color: #f2f2f1;
+  color: #7c8088;
   padding-bottom: 0;
 }
 article.about h1, article.about h2, article.about h3, article.about h4, article.about h5, article.about h6, article.about p, article.about blockquote, article.about cite, article.about dl, article.about ul, article.about ol {
