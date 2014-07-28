@@ -621,11 +621,12 @@ article.about {
 background-color: $brand-background-color;
 color: $brand-text-color;
 padding-bottom: 0;
-  h1, h2, h3, h4, h5, h6, p, blockquote, cite, dl, ul, ol {
+  h1, h2, h3, h4, h5, h6, blockquote, cite, dl, ul, ol {
     color: $royal-blue-color;
   }
   p.lead-in {
     color: $brand-text-color;
+    
   }
   hr {
     background-color: transparent;
@@ -698,6 +699,10 @@ padding-bottom: 0;
   & > h3 {
     margin-top: -60px;
     margin-bottom: 30px;
+    text-decoration: upppercase;
+    font: {
+      family: "brandon-grotesque", $font-family-sans-serif;
+    }
   }
 
   & > p {

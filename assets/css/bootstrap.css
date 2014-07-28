@@ -7344,7 +7344,7 @@ article.about {
   color: #7c8088;
   padding-bottom: 0;
 }
-article.about h1, article.about h2, article.about h3, article.about h4, article.about h5, article.about h6, article.about p, article.about blockquote, article.about cite, article.about dl, article.about ul, article.about ol {
+article.about h1, article.about h2, article.about h3, article.about h4, article.about h5, article.about h6, article.about blockquote, article.about cite, article.about dl, article.about ul, article.about ol {
   color: #2a4697;
 }
 article.about p.lead-in {
@@ -7416,6 +7416,8 @@ article.about hr {
 .slide-padding > h3 {
   margin-top: -60px;
   margin-bottom: 30px;
+  text-decoration: upppercase;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .slide-padding > p {
   margin-top: 30px;
