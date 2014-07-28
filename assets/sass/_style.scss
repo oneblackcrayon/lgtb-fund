@@ -306,7 +306,7 @@ span.read-more,
   text-decoration: none;
   text-transform: uppercase;
   font: {
-    family: "BrandonGrotesque", $font-family-sans-serif;
+    family: "brandon-grotesque", $font-family-sans-serif;
     size: 14px;
   }
   & a.bx-next {
@@ -387,7 +387,7 @@ footer{
 // Nav
 nav > * {
   font: {
-    family: "BrandonGrotesque", $font-family-sans-serif;
+    family: "brandon-grotesque", $font-family-sans-serif;
   }
   text-align: left;
 }
@@ -576,7 +576,7 @@ z-index: 19;
 .scroll-arrow {
 color: $brand-grey-color;
   font: {
-    family: "BrandonGrotesque", $font-family-sans-serif;
+    family: "brandon-grotesque", $font-family-sans-serif;
     size: 12px;
   }
   & a {
@@ -624,7 +624,7 @@ padding-bottom: 0;
   h1, h2, h3, h4, h5, h6, p, blockquote, cite, dl, ul, ol {
     color: $royal-blue-color;
   }
-  .lead-in {
+  p.lead-in {
     color: $brand-text-color;
   }
   hr {

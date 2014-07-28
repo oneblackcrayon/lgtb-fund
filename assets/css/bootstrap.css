@@ -6981,7 +6981,7 @@ span.read-more,
   color: #17bde1;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 span.read-more a.bx-next,
@@ -7114,7 +7114,7 @@ footer hr {
 }
 
 nav > * {
-  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
 }
 
@@ -7303,7 +7303,7 @@ body.nav-expanded {
 
 .scroll-arrow {
   color: #acacac;
-  font-family: "BrandonGrotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
 }
 .scroll-arrow a {
@@ -7347,7 +7347,7 @@ article.about {
 article.about h1, article.about h2, article.about h3, article.about h4, article.about h5, article.about h6, article.about p, article.about blockquote, article.about cite, article.about dl, article.about ul, article.about ol {
   color: #2a4697;
 }
-article.about .lead-in {
+article.about p.lead-in {
   color: #7c8088;
 }
 article.about hr {
