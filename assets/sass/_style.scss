@@ -18,7 +18,7 @@ $visited-link-color: #81F1F8;
 html {
 border: none;
 font-size: 16px;
-line-height: normal;
+line-height: 1.2;
 margin: 0;
 padding: 0;
 vertical-align: baseline;
@@ -62,7 +62,7 @@ h2 {
   font: {
     family: "brandon-grotesque", $font-family-sans-serif;
     size: 24px;
-    weight: normal;
+    weight: 700;
   }
 }
 
@@ -71,12 +71,13 @@ h3 {
   font: {
     family: 'freight-text-pro', $font-family-sans-serif;
     size: 16px;
-    weight: normal;
+    weight: 700;
   }
 }
 
 h4, h5, h6 {
   font: {
+    family: "brandon-grotesque", $font-family-sans-serif;
     family: sans-serif;
     weight: 400;
   }
@@ -884,7 +885,10 @@ padding: 77px 0;
   .site-link {
     color: white;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  .site-link {
+    text-decoration: underline;
   }
   .social-links {
     background-color: #ffffff;

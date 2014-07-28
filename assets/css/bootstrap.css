@@ -6697,7 +6697,7 @@ button.close {
 html {
   border: none;
   font-size: 16px;
-  line-height: normal;
+  line-height: 1.2;
   margin: 0;
   padding: 0;
   vertical-align: baseline;
@@ -6738,17 +6738,18 @@ h2 {
   text-transform: uppercase;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 h3 {
   text-transform: uppercase;
   font-family: "freight-text-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 h4, h5, h6 {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: sans-serif;
   font-weight: 400;
 }
@@ -7590,7 +7591,10 @@ footer .copy address,
 footer .site-link {
   color: white;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
+}
+footer .site-link {
+  text-decoration: underline;
 }
 footer .social-links {
   background-color: #ffffff;
