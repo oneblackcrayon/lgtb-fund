@@ -306,54 +306,6 @@ article {
     }
   }
 }
-span.read-more,
-.read-more {
-  display: block;
-  color: #17bde1;
-  text-decoration: none;
-  text-transform: uppercase;
-  font: {
-    family: "brandon-grotesque", $font-family-sans-serif;
-    size: 14px;
-    weight: 700;
-  }
-  position: absolute;
-  bottom: 65px;
-  right: 25%;
-  left: 25%;
-
-  & a.bx-next {
-    color: #17bde1 !important;
-    display: inline-block;
-  }
-
-  & a.bx-prev {
-    
-    color: #17bde1 !important;
-    display: inline-block;
-    margin-top: 24px;
-    width: 48px;
-    vertical-align: top;
-
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 50px;
-    text-align: center;
-
-    &:before {
-      content: "\e600";
-    }
-
-  }
-
-}
 
 .facebook-icon {
   display: inline-block;
@@ -800,15 +752,68 @@ padding-bottom: 0;
   display: none;
 }
 
+.read-more {
+  color: #17bde1;
+  display: inline-block;
+  font: {
+    family: "brandon-grotesque", $font-family-sans-serif;
+    size: 14px;
+    weight: 700;
+  }
+  margin-top: 0;
+  position: absolute;
+  bottom: 65px;
+  right: 25%;
+  left: 25%;
+  text-decoration: none;
+  text-transform: uppercase;
 
+  & .bx-prev,
+  & .bx-next {
+    color: #17bde1 !important;
+    line-height: 50px;
+    margin-top: 0;
+    vertical-align: top;
+  }
+
+  & a.bx-prev {
+    
+    color: #17bde1 !important;
+    display: inline-block;
+    
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 50px;
+    text-align: center;
+
+    &:before {
+      content: "\e600";
+    }
+  }
+}
 .slide-padding {
   box-sizing: border-box;
   padding: 120px 30px 60px;
-  min-height: 480px;
+  min-height: 540px;
+  position: relative;
+  
+  & h3,
+  & span.icon,
+  & p {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
 
   & > h3 {
     margin-top: -60px;
-    margin-bottom: 30px;
     text-decoration: upppercase;
     font: {
       family: "brandon-grotesque", $font-family-sans-serif;
@@ -816,18 +821,20 @@ padding-bottom: 0;
       size: 16px;
     }
   }
-
-  & > p {
-    margin-top: 30px;
-    margin-bottom: 60px;
-  }
-
 }
+
 .off,
 .on {
 } 
 .on {
   background-color: $slider-background-color;
+}
+
+  .panel-two span.icon,
+.panel-three span.icon,
+ .panel-four span.icon {
+  margin-top: 48px;
+
 }
 
 

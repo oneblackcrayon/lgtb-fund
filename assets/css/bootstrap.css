@@ -6972,49 +6972,6 @@ article.container-fluid p a {
   text-decoration: underline;
 }
 
-span.read-more,
-.read-more {
-  display: block;
-  color: #17bde1;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  position: absolute;
-  bottom: 65px;
-  right: 25%;
-  left: 25%;
-}
-span.read-more a.bx-next,
-.read-more a.bx-next {
-  color: #17bde1 !important;
-  display: inline-block;
-}
-span.read-more a.bx-prev,
-.read-more a.bx-prev {
-  color: #17bde1 !important;
-  display: inline-block;
-  margin-top: 24px;
-  width: 48px;
-  vertical-align: top;
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 50px;
-  text-align: center;
-}
-span.read-more a.bx-prev:before,
-.read-more a.bx-prev:before {
-  content: "\e600";
-}
-
 .facebook-icon {
   display: inline-block;
   width: 34px;
@@ -7487,26 +7444,72 @@ article.about hr {
   display: none;
 }
 
+.read-more {
+  color: #17bde1;
+  display: inline-block;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+  position: absolute;
+  bottom: 65px;
+  right: 25%;
+  left: 25%;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.read-more .bx-prev, .read-more .bx-next {
+  color: #17bde1 !important;
+  line-height: 50px;
+  margin-top: 0;
+  vertical-align: top;
+}
+.read-more a.bx-prev {
+  color: #17bde1 !important;
+  display: inline-block;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 50px;
+  text-align: center;
+}
+.read-more a.bx-prev:before {
+  content: "\e600";
+}
+
 .slide-padding {
   box-sizing: border-box;
   padding: 120px 30px 60px;
-  min-height: 480px;
+  min-height: 540px;
+  position: relative;
+}
+.slide-padding h3, .slide-padding span.icon, .slide-padding p {
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 .slide-padding > h3 {
   margin-top: -60px;
-  margin-bottom: 30px;
   text-decoration: upppercase;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
-.slide-padding > p {
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
 
 .on {
   background-color: #deeff2;
+}
+
+.panel-two span.icon,
+.panel-three span.icon,
+.panel-four span.icon {
+  margin-top: 48px;
 }
 
 .help {
