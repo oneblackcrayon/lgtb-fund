@@ -342,8 +342,8 @@ span.read-more,
   display: block;
   height: 190px;
   position: absolute;
-  top: -107px;
-  left: 30px;
+  top: -157px;
+  left: 60px;
   z-index: 6;
 }
 
@@ -557,6 +557,24 @@ padding-top: 12px;
   margin: auto;
 }
 .carousel-indicators {
+  & li {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  & .active {
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+    background-color: #FFF;
+  }
 }
 .carousel-caption {
   font-size: 2em;
@@ -638,7 +656,7 @@ color: $brand-grey-color;
       }
     }
     &.text-center {
-      margin-top: -20px;
+      margin-top: 0px;
     }
   }
 }
