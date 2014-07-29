@@ -7288,7 +7288,7 @@ body.nav-expanded {
   margin: 1px;
   text-indent: -999px;
   border: 1px solid #FFF;
-  border-radius: 16px;
+  border-radius: 20px;
   cursor: pointer;
   background-color: transparent;
 }
