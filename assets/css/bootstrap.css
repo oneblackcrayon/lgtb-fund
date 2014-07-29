@@ -6719,6 +6719,8 @@ body {
   position: relative;
   text-align: center;
   width: 100%;
+  left: 0;
+  transition: left 250ms ease-in-out 0s;
 }
 
 /* Global Headers */
@@ -6991,15 +6993,6 @@ article.container-fluid p a {
   top: 30%;
 }
 
-nav > h6 {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 48px 0;
-  color: white;
-  font-size: 24px;
-}
-
 .logo {
   display: block;
   height: 190px;
@@ -7114,6 +7107,15 @@ footer hr {
 nav > * {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
+}
+
+nav > h6 {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 48px 0;
+  color: white;
+  font-size: 24px;
 }
 
 a.nav-expander {
@@ -7267,6 +7269,11 @@ body.nav-expanded {
   transform: translateY(-6px) translateX(0) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
   -moz-transform: translateY(-6px) translateX(0) rotate(-45deg);
+}
+
+body.nav-pushes-body {
+  left: 5%;
+  transition: left 250ms ease-in-out 0s;
 }
 
 .carousel-inner > .item > img,

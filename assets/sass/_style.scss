@@ -43,6 +43,8 @@ padding: 0;
 position: relative;
 text-align: center;
 width: 100%;
+left: 0;
+transition: left 250ms ease-in-out 0s;
 }
 
 /* Global Headers */
@@ -330,15 +332,6 @@ article {
 
 
 
-nav > h6 {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 48px 0;
-  color: white;
-  font-size: 24px;
-}
-
 // Logo
 .logo {
   display: block;
@@ -401,6 +394,14 @@ nav > * {
     family: "brandon-grotesque", $font-family-sans-serif;
   }
   text-align: left;
+}
+nav > h6 {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 48px 0;
+  color: white;
+  font-size: 24px;
 }
 
 // Navigation styles
@@ -551,6 +552,12 @@ padding-top: 12px;
   transform: translateY(-6px) translateX(0) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(0) rotate(-45deg);
   -moz-transform: translateY(-6px) translateX(0) rotate(-45deg);
+}
+
+// Pushes the body over on click
+body.nav-pushes-body {
+  left: 5%;
+  transition: left 250ms ease-in-out 0s;
 }
  
 
