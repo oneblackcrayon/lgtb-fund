@@ -7688,17 +7688,3 @@ footer .site-link {
 footer .site-link {
   text-decoration: underline;
 }
-footer .social-links {
-  background-color: #ffffff;
-  border-radius: 50%;
-  height: 24px;
-  margin: auto;
-  width: 24px;
-}
-footer .social-links a {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-  margin-top: -1px;
-  padding: 3px;
-}
