@@ -63,12 +63,13 @@ h1, article h1, section h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   font: {
     family: "brandon-grotesque", $font-family-sans-serif;
     size: 24px;
     weight: 700;
   }
+  margin-bottom: 37px;
+  text-transform: uppercase;
 }
 
 h3 {

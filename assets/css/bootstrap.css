@@ -6737,10 +6737,11 @@ h1, article h1, section h1 {
 }
 
 h2 {
-  text-transform: uppercase;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 37px;
+  text-transform: uppercase;
 }
 
 h3 {
