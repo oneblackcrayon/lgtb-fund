@@ -6995,8 +6995,10 @@ article.container-fluid p a {
 }
 
 .logo {
-  display: none;
-  height: 190px;
+  display: block;
+  position: absolute;
+  top: -92px;
+  left: 60px;
   z-index: 6;
 }
 
@@ -7277,81 +7279,50 @@ body.nav-pushes-body {
 header.container-fluid {
   background-color: #f2f2f1;
   line-height: normal;
+  min-height: 1px;
+  position: relative;
 }
 
-.carousel-wrapper {
-  margin-bottom: 0;
-  overflow: hidden;
-  z-index: 19;
-}
-.carousel-wrapper .carousel-img-overlay {
-  display: inline-block;
-  max-height: 50%;
-  margin: auto;
-  padding: 0;
+.carousel-img-overlay {
+  max-height: 60%;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translateY(-25%) translateX(-50%);
-  -moz-transform: translateY(-25%) translateX(-50%);
-  transform: translateY(-25%) translateX(-50%);
   z-index: 20;
+  -webkit-transform: translateY(-20%) translateX(-50%);
+  -moz-transform: translateY(-20%) translateX(-50%);
+  transform: translateY(-20%) translateX(-50%);
 }
 
 .carousel {
-  overflow: hidden;
-}
-.carousel > .carousel-inner {
-  overflow: hidden;
-}
-.carousel > .carousel-inner .item {
-  width: 100%;
-  overflow: hidden;
-}
-.carousel > .carousel-inner .item img {
-  margin: auto;
-}
-.carousel .carousel-control {
-  background: none;
-  border: none;
-}
-@media (max-width: 767px) {
-  .carousel {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
+  position: relative;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  margin: auto;
+.carousel-inner .item > .carousel-caption {
+  font-size: 37px;
+  top: 70%;
+  text-shadow: none;
 }
 
 .carousel-indicators {
-  margin-bottom: 30px;
+  top: 80%;
 }
-.carousel-indicators li {
+.carousel-indicators > li {
+  background-color: transparent;
+  border: 3px solid #FFF;
+  border-radius: 13px;
+  cursor: pointer;
   display: inline-block;
   width: 12px;
   height: 12px;
   margin: 0px 4px;
   text-indent: -999px;
-  border: 3px solid #FFF;
-  border-radius: 13px;
-  cursor: pointer;
-  background-color: transparent;
 }
-.carousel-indicators .active {
+.carousel-indicators > .active {
+  background-color: #FFF;
+  height: 12px;
   margin: -1px 4px 0px;
   width: 12px;
-  height: 12px;
-  background-color: #FFF;
-}
-
-.carousel-caption {
-  font-size: 2em;
-  margin-bottom: 30px;
-  text-shadow: none;
 }
 
 .scroll-arrow {
@@ -7360,9 +7331,18 @@ header.container-fluid {
   display: inline-block;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
-  margin: auto auto 0;
-  min-height: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
   text-align: center;
+  z-index: 19;
+}
+@media (max-width: 767px) {
+  .scroll-arrow {
+    display: none;
+  }
 }
 .scroll-arrow a {
   color: #acacac;
@@ -7700,9 +7680,9 @@ footer .copy h6,
 footer .copy address,
 footer .site-link {
   color: white;
+  display: inline-block;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
-  display: inline-block;
   font-size: 14px;
 }
 footer .site-link {
