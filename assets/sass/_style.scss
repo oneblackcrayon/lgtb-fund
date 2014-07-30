@@ -984,10 +984,11 @@ aside.supporters {
         
         
         
-        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
-        height: 100%;
-        width: 100%;
-        margin: auto;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        box-sizing: border-box;
+        height: 200px;
+        width: 200px;
+        margin: 0;
         padding: 12px;
         position: relative;
         top: 0;
