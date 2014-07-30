@@ -638,12 +638,8 @@ z-index: 19;
 
 
 @media (max-width: 767px) {
-display: none;
+//display: none;
 }
-
-
-
-
   & a {
     color: $brand-grey-color;
     font-weight: 700;
@@ -682,7 +678,8 @@ display: none;
 
 
 // Main
-
+main#main {
+}
 // About the Fund
 article.about {
 background-color: $brand-background-color;

@@ -7339,11 +7339,6 @@ header.container-fluid {
   text-align: center;
   z-index: 19;
 }
-@media (max-width: 767px) {
-  .scroll-arrow {
-    display: none;
-  }
-}
 .scroll-arrow a {
   color: #acacac;
   font-weight: 700;
