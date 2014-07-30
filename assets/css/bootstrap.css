@@ -7284,7 +7284,7 @@ header.container-fluid {
 }
 
 .carousel-img-overlay {
-  max-height: 60%;
+  max-height: 40%;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -7346,25 +7346,6 @@ header.container-fluid {
 }
 .scroll-arrow a:hover {
   color: #7c8088;
-}
-.scroll-arrow span.fa-arrow-down {
-  background-color: #f2f2f1;
-  border-radius: 50%;
-  color: #7c8088;
-  margin: 0 auto;
-  width: 60px;
-  line-height: 60px;
-  vertical-align: middle;
-  position: relative;
-}
-.scroll-arrow span.fa-arrow-down:hover {
-  background-origin: padding-box;
-  background-clip: padding-box;
-  background-color: #15aed8;
-  color: white;
-}
-.scroll-arrow span.text-center {
-  margin-top: 0px;
 }
 
 article.about {
