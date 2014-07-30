@@ -7650,7 +7650,7 @@ aside.supporters .img .overlay figcaption {
   -moz-transform: translateY(-25%) translateX(0%);
   transform: translateY(-25%) translateX(0%);
 }
-@media (max-width: 767px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
   aside.supporters .img .overlay figcaption {
     height: 100%;
     width: 100%;
@@ -7659,6 +7659,9 @@ aside.supporters .img .overlay figcaption {
     position: relative;
     top: 0;
     left: 0;
+    -webkit-transform: translateY(0) translateX(0);
+    -moz-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
   }
 }
 aside.supporters .img .overlay figcaption h3 {
