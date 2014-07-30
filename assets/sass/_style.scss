@@ -336,11 +336,14 @@ article {
 // Logo
 .logo {
   display: block;
-  //height: 190px;
-  position: absolute;
-  top: -92px;
-  left: 60px;
-  z-index: 6;
+  position: relative;
+  margin: -10px auto 40px;
+  //bottom: 60px;
+  //left: 120px;
+  //z-index: 6;
+
+   @media (max-width:767px) {
+  }
 }
 
 // Block padding to frame in content
