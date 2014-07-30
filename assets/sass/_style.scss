@@ -576,16 +576,14 @@ position: relative;
 }
 
 .carousel-img-overlay {
-  max-height: 60%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  z-index: 20;
-
+max-height: 60%;
+position: absolute;
+top: 20%;
+left: 50%;
+z-index: 20;
 -webkit-transform: translateY(-20%) translateX(-50%);
 -moz-transform:    translateY(-20%) translateX(-50%);
 transform:         translateY(-20%) translateX(-50%);
-
 }
 
 // Carousel
