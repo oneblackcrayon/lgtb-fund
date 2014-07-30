@@ -7309,6 +7309,7 @@ header.container-fluid {
 
 .carousel-indicators {
   top: 80%;
+  height: 20px;
 }
 .carousel-indicators > li {
   background-color: transparent;
@@ -7329,32 +7330,22 @@ header.container-fluid {
 }
 
 .scroll-arrow {
-  background-color: #f2f2f1;
   color: #acacac;
   display: inline-block;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
-  height: 80px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  height: 60px;
+  position: relative;
+  top: -80px;
   text-align: center;
-  z-index: 19;
+  z-index: 20;
 }
 .scroll-arrow a {
   color: #acacac;
-  font-weight: 700;
   display: block;
-  position: relative;
-  text-decoration: none;
-  z-index: 5;
 }
 .scroll-arrow a:hover {
   color: #7c8088;
-}
-.scroll-arrow span {
-  display: block;
 }
 .scroll-arrow span.fa-arrow-down {
   background-color: #f2f2f1;
@@ -7365,7 +7356,6 @@ header.container-fluid {
   line-height: 60px;
   vertical-align: middle;
   position: relative;
-  top: -20px;
 }
 .scroll-arrow span.fa-arrow-down:hover {
   background-origin: padding-box;

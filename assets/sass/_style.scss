@@ -606,7 +606,8 @@ position: relative;
 }
 
 .carousel-indicators {
-    top: 80%;  
+    top: 80%;
+    height: 20px;
 
     & > li {
       background-color: transparent;
@@ -630,37 +631,27 @@ position: relative;
 
 
 // ScrollTo Arrow
+
 .scroll-arrow {
-background-color: $brand-background-color;
 color: $brand-grey-color;
 display: inline-block;
 font: {
   family: "brandon-grotesque", $font-family-sans-serif;
   size: 17px;
 }
-height: 80px;
-position: absolute;
-bottom: 0; right: 0; left: 0;
+height: 60px;
+position: relative;
+top: -80px;
 text-align: center;
-z-index: 19;
-
-
-@media (max-width: 767px) {
-//display: none;
-}
+z-index: 20;
   & a {
     color: $brand-grey-color;
-    font-weight: 700;
     display: block;
-    position: relative;
-    text-decoration: none;
-    z-index: 5;
     &:hover {
       color: $brand-text-color;
     }
   }
   & span {
-    display: block;
     &.fa-arrow-down {
       background-color: $brand-background-color;
       border-radius: 50%;
@@ -670,7 +661,6 @@ z-index: 19;
       line-height: 60px;
       vertical-align: middle;
       position: relative;
-      top: -20px;
       &:hover {
         background-origin: padding-box;
         background-clip: padding-box;
