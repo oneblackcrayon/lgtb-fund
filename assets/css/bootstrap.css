@@ -7676,6 +7676,7 @@ footer {
   padding: 77px 0;
 }
 footer .copy i {
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -7683,6 +7684,8 @@ footer .copy h6,
 footer .copy address,
 footer .site-link {
   color: white;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
   display: inline-block;
   font-size: 14px;
 }
