@@ -590,6 +590,9 @@ transform:         translateY(-20%) translateX(-50%);
 position: relative;
 }
 .carousel-inner {
+  .item {
+    min-width: 2500px !important;
+  }
   .item > img {
     margin: auto;
   }
@@ -989,6 +992,19 @@ aside.supporters {
         -webkit-transform: translateY(-25%) translateX(0%);
         -moz-transform: translateY(-25%) translateX(0%);
         transform: translateY(-25%) translateX(0%);
+        
+        @media (max-width: 767px) {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 12px;
+        position: relative;
+        top: 0;
+        left: 0;
+        
+        }
+        
+        
         
         & h3 {
           font: {
