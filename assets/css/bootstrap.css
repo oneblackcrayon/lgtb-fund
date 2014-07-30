@@ -7300,6 +7300,9 @@ header.container-fluid {
   position: relative;
 }
 
+.carousel-inner .item > img {
+  margin: auto;
+}
 .carousel-inner .item > .carousel-caption {
   font-size: 37px;
   top: 70%;
@@ -7647,9 +7650,11 @@ aside.supporters .img .overlay {
   width: 100%;
 }
 aside.supporters .img .overlay figcaption {
+  box-sizing: content-box;
   display: inline-block;
+  font-size: 16px;
   height: 140px;
-  width: 210px;
+  width: 290px;
   margin: auto;
   padding: 1em;
   top: 25%;
@@ -7659,10 +7664,19 @@ aside.supporters .img .overlay figcaption {
   transform: translateY(-25%) translateX(0%);
 }
 aside.supporters .img .overlay figcaption h3 {
-  font-size: 14px;
+  font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 aside.supporters .img .overlay figcaption p {
-  font-size: 13px;
+  font-family: "freight-text-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+aside.supporters .img .overlay figcaption p i {
+  display: block;
+  font-family: "freight-text-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 footer {

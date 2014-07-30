@@ -590,6 +590,9 @@ transform:         translateY(-20%) translateX(-50%);
 position: relative;
 }
 .carousel-inner {
+  .item > img {
+    margin: auto;
+  }
   .item > .carousel-caption {
     font-size: 37px;
     top: 70%;  
@@ -860,6 +863,8 @@ background-color: $sky-blue-color;
   }
 }
 // Aside Gallery
+
+
 .effects {
   
 }
@@ -972,12 +977,13 @@ aside.supporters {
       width: 100%;
 
       figcaption {
+        box-sizing: content-box;
         display: inline-block;
+        font-size: 16px;
         height: 140px;
-        width: 210px;
+        width: 290px;
         margin: auto;
         padding: 1em;
-        //width: 100%;
         top: 25%;
         left: 0;
         -webkit-transform: translateY(-25%) translateX(0%);
@@ -985,11 +991,25 @@ aside.supporters {
         transform: translateY(-25%) translateX(0%);
         
         & h3 {
-          font-size: 14px;
+          font: {
+          family: "brandon-grotesque", $font-family-sans-serif;
+          size: 18px;
+          }
         }
-        
         & p {
-          font-size: 13px;
+          font: {
+          family: 'freight-text-pro', $font-family-sans-serif;
+          size: 16px;
+          }
+        }
+        & p i {
+          display: block;
+          font: {
+          family: 'freight-text-pro', $font-family-sans-serif;
+          style: italic;
+          size: 16px;
+          }
+          margin-bottom: 20px;
         }
         
       }
