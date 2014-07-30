@@ -7300,9 +7300,6 @@ header.container-fluid {
   position: relative;
 }
 
-.carousel-inner .item {
-  min-width: 2500px !important;
-}
 .carousel-inner .item > img {
   margin: auto;
 }
