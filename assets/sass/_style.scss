@@ -335,11 +335,11 @@ article {
 
 // Logo
 .logo {
-  display: block;
+  display: none;
   height: 190px;
-  position: absolute;
-  top: -173px;
-  left: 60px;
+  // position: absolute;
+  // top: -92px;
+  // left: 60px;
   z-index: 6;
 }
 
@@ -564,29 +564,73 @@ body.nav-pushes-body {
 
 
 // Header
+
+header.container-fluid {
+background-color: $brand-background-color;
+line-height: normal;
+}
+
 // Carousel
+.carousel-wrapper {
+  margin-bottom: 0;
+  overflow: hidden;
+  z-index: 19;
+  .carousel-img-overlay {
+    display: inline-block;
+    max-height: 50%;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translateY(-25%) translateX(-50%);
+    -moz-transform: translateY(-25%) translateX(-50%);
+    transform: translateY(-25%) translateX(-50%);
+    z-index: 20;
+  }
+}
+.carousel {
+overflow: hidden;
+  > .carousel-inner {
+  overflow: hidden;
+    .item {
+    width: 100%;
+    overflow: hidden;
+      & img {
+        margin: auto;
+      }
+    }
+  }
 
-
-
+  .carousel-control {
+    background: none;
+    border: none;
+  }
+  @media (max-width: 767px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   margin: auto;
 }
 .carousel-indicators {
+  margin-bottom: 30px;
   & li {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 1px;
+    width: 12px;
+    height: 12px;
+    margin: 0px 4px;
     text-indent: -999px;
-    border: 2px solid #FFF;
-    border-radius: 10px;
+    border: 3px solid #FFF;
+    border-radius: 13px;
     cursor: pointer;
     background-color: transparent;
   }
   
   & .active {
-    margin: 0px;
+    margin: -1px 4px 0px;
     width: 12px;
     height: 12px;
     background-color: #FFF;
@@ -594,65 +638,28 @@ body.nav-pushes-body {
 }
 .carousel-caption {
   font-size: 2em;
+  margin-bottom: 30px;
   text-shadow: none;
-}
-.carousel {
-  .item {
-    width: 100%;
-    max-height: 640px;
-
-  & .img-responsive {
-      position: relative;
-      top: -40%;
-      width: 100%;
-    }
-  }
-  .carousel-control {
-    background: none;
-    border: none;
-    top: 50%;
-  }
-  @media (max-width: 767px) {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-}
-
-.carousel-wrapper {
-// z-index: 19;
-  .carousel-img-overlay {
-    display: inline-block;
-    max-height: 60%;
-    margin: auto;
-    padding: 1em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%);
-    transform: translateY(-50%) translateX(-50%);
-    z-index: 20;
-  }
 }
 
 // ScrollTo Arrow
 .scroll-arrow {
+background-color: $brand-background-color;
 color: $brand-grey-color;
 display: inline-block;
-  font: {
-    family: "brandon-grotesque", $font-family-sans-serif;
-    size: 15px;
-  }
-width: 25%;
-margin: auto;
+font: {
+  family: "brandon-grotesque", $font-family-sans-serif;
+  size: 15px;
+}
+margin: auto auto 0;
+min-height: 80px;
 text-align: center;
-  
-  
   & a {
     color: $brand-grey-color;
     font-weight: 700;
     display: block;
     position: relative;
+    text-decoration: none;
     z-index: 5;
     &:hover {
       color: $brand-text-color;
