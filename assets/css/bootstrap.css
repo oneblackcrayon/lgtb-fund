@@ -6990,8 +6990,10 @@ article.container-fluid p a {
 }
 
 .facebook-icon.menu-icon {
-  position: relative;
-  top: 30%;
+  position: absolute;
+  bottom: 30%;
+  right: 25%;
+  left: 25%;
 }
 
 .logo {
@@ -7330,7 +7332,7 @@ header.container-fluid {
   color: #acacac;
   display: inline-block;
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   height: 80px;
   position: absolute;
   bottom: 0;

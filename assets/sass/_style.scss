@@ -327,8 +327,8 @@ article {
 }
 
 .facebook-icon.menu-icon {
-  position: relative;
-  top: 30%; 
+  position: absolute;
+  bottom: 30%; right: 25%; left: 25%;
 }
 
 
@@ -628,7 +628,7 @@ color: $brand-grey-color;
 display: inline-block;
 font: {
   family: "brandon-grotesque", $font-family-sans-serif;
-  size: 15px;
+  size: 17px;
 }
 height: 80px;
 position: absolute;
