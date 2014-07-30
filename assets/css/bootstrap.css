@@ -7576,7 +7576,7 @@ a.close-overlay {
 }
 
 a.close-overlay.hidden {
-  display: none;
+  display: block;
 }
 
 a.expand {
@@ -7631,10 +7631,6 @@ aside.supporters .img .overlay {
   background: rgba(42, 70, 151, 0.6);
   color: white;
   float: right;
-  height: 100%;
-  margin: auto;
-  vertical-align: middle;
-  width: 100%;
 }
 aside.supporters .img .overlay figcaption {
   box-sizing: content-box;
