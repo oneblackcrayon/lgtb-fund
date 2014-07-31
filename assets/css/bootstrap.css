@@ -7479,6 +7479,25 @@ article.about hr {
   content: "\e600";
 }
 
+@media (max-width: 767px) {
+  .p2,
+  .p3,
+  .p4 {
+    border-top: 1px solid #ffffff;
+  }
+}
+@media (min-width: 767px) and (max-width: 1199px) {
+  .p1,
+  .p3 {
+    border-top: 1px solid #ffffff;
+    border-right: 1px inset #ffffff;
+  }
+
+  .p2,
+  .p4 {
+    border-top: 1px solid #ffffff;
+  }
+}
 .slide-padding {
   box-sizing: border-box;
   padding: 120px 30px 60px;
