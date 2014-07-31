@@ -7002,7 +7002,7 @@ article.container-fluid p a {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .facebook-icon.menu-icon {
-    bottom: 10%;
+    bottom: 30px;
   }
 }
 
