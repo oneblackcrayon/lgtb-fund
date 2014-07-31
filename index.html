@@ -55,6 +55,47 @@ $(document).ready(function(){
   }
 });
 </script>
+
+<style type="text/css">
+/* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container-fluid {
+      position: relative;
+      z-index: 10;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 640px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 640px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 540px;
+    }
+</style>
+
 </head>
 
 <body id="document" role="document">
@@ -82,45 +123,41 @@ $(document).ready(function(){
 
   <header class="container-fluid" id="intro">
     <img class="carousel-img-overlay" src="assets/images/lgbt-fund-logo.png" alt="" />
-    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-generic" class="carousel slide" data-ride="-carousel">
       <ol class="carousel-indicators">
           <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-generic" data-slide-to="1"></li>
           <li data-target="#carousel-generic" data-slide-to="2"></li>
         </ol><!-- end /.carousel-indicators -->
-      <div class="carousel-inner">
-          <div class="item active">
-            <picture>
-              <!--[if IE 9]><video style="display: none;"><![endif]-->
-             <source media="(min-width:768px), (orientation:landscape)" class="img-responsive" srcset="assets/images/LGBT-Slide-1.jpg">
-             <source class="img-responsive" srcset="assets/images/LGBT-Slide-1-640.jpg">
-             <!--[if IE 9]></video><![endif]-->
-             <img class="img-responsive" src="assets/images/LGBT-Slide-1-640.jpg" alt=" ">
-            </picture><div class="carousel-caption hidden-sm hidden-xs">West Michigan, it&#146;s time.</div>
+      
+      
+      
+        <div class="carousel-inner">
+          <div class="item active" style="background: url(assets/images/LGBT-Slide-1.jpg) no-repeat center center; background-size: cover;">
+            <div class="container-fluid">
+              <div class="carousel-caption hidden-sm hidden-xs">West Michigan, it&#146;s time.</div>
+            </div>
           </div>
-          <div class="item">
-            <picture>
-              <!--[if IE 9]><video style="display: none;"><![endif]-->
-             <source media="(min-width:768px), (orientation:landscape)" class="img-responsive" srcset="assets/images/LGBT-Slide-2.jpg">
-             <source class="img-responsive" srcset="assets/images/LGBT-Slide-2-640.jpg">
-             <!--[if IE 9]></video><![endif]-->
-             <img class="img-responsive" src="assets/images/LGBT-Slide-2-640.jpg" alt=" ">
-            </picture><div class="carousel-caption hidden-sm hidden-xs">We can make a difference, together.</div>
+          <div class="item" style="background: url(assets/images/LGBT-Slide-2.jpg) no-repeat center center; background-size: cover;">
+            <div class="container-fluid">
+              <div class="carousel-caption hidden-sm hidden-xs">We can make a difference, together.</div>
+            </div>
           </div>
-          <div class="item">
-            <picture>
-              <!--[if IE 9]><video style="display: none;"><![endif]-->
-             <source class="img-responsive" media="(min-width:768px), (orientation:landscape)" srcset="assets/images/LGBT-Slide-3.jpg">
-             <source class="img-responsive" srcset="assets/images/LGBT-Slide-3-640.jpg">
-             <!--[if IE 9]></video><![endif]-->
-             <img class="img-responsive" src="assets/images/LGBT-Slide-3-640.jpg" alt=" ">
-            </picture><div class="carousel-caption hidden-sm hidden-xs">Support our LGBT community.</div>
+          <div class="item" style="background: url(assets/images/LGBT-Slide-3.jpg) no-repeat center center; background-size: cover;">
+            <div class="container-fluid">
+              <div class="carousel-caption hidden-sm hidden-xs">Support our LGBT community.</div>
+            </div>
           </div>
-        </div><!-- end /.carousel-inner -->       
+        </div><!-- end /.carousel-inner -->  
+        
+        
+        
+             
     </div><!-- end /.carousel -->
     <div class="scroll-arrow hidden-sm hidden-xs">
       <a href="#about">
         <span class="fa fa-arrow-down fa-2x"></span>
+        <span class="text-center">Scroll to find out more.</span>
       </a>
     </div><!-- end /.scroll-arrow -->
   </header><!-- end /header.container-fluid -->
@@ -366,7 +403,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 
   $('.carousel').carousel({
-    interval: 4000,
+    interval: 60000,
     wrap: true
   })
 

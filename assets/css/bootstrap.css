@@ -7305,9 +7305,11 @@ header.container-fluid {
 .carousel-inner .item > img {
   margin: auto;
 }
-.carousel-inner .item > .carousel-caption {
+.carousel-inner .item > .container-fluid > .carousel-caption,
+.carousel-inner .item > .container > .carousel-caption {
+  display: inline-block;
   font-size: 37px;
-  top: 68%;
+  bottom: 68%;
   text-shadow: none;
 }
 
@@ -7393,7 +7395,8 @@ header.container-fluid {
   color: white;
 }
 .scroll-arrow span.text-center {
-  margin-top: 0px;
+  display: block;
+  margin-top: 20px;
 }
 
 article.about {

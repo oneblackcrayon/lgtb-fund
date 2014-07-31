@@ -601,9 +601,11 @@ position: relative;
   .item > img {
     margin: auto;
   }
-  .item > .carousel-caption {
+  .item > .container-fluid > .carousel-caption,
+  .item > .container > .carousel-caption {
+    display: inline-block;
     font-size: 37px;
-    top: 68%;  
+    bottom: 68%;  
     text-shadow: none;
   }
 }
@@ -696,7 +698,8 @@ z-index: 20;
       }
     }
     &.text-center {
-      margin-top: 0px;
+      display: block;
+      margin-top: 20px;
     }
   }
 }
