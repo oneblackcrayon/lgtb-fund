@@ -7002,7 +7002,10 @@ article.container-fluid p a {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .facebook-icon.menu-icon {
+    position: absolute;
     bottom: 30px;
+    right: 25%;
+    left: 25%;
   }
 }
 
@@ -7625,7 +7628,7 @@ a.close-overlay {
   color: #000001;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px !important;
+  font-size: 24px !important;
   font-weight: 700;
   height: 46px;
   line-height: 46px;
