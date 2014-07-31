@@ -7329,6 +7329,7 @@ header.container-fluid {
   padding: 0 20px;
   position: static;
   text-shadow: none;
+  width: 100%;
   z-index: 10;
 }
 
