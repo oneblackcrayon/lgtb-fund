@@ -7625,7 +7625,7 @@ a.close-overlay {
   color: #000001;
   cursor: pointer;
   display: inline-block;
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: 700;
   height: 46px;
   line-height: 46px;
