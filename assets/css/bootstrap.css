@@ -7000,6 +7000,11 @@ article.container-fluid p a {
     bottom: 10%;
   }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .facebook-icon.menu-icon {
+    bottom: 10%;
+  }
+}
 
 .logo {
   display: block;
@@ -7616,19 +7621,19 @@ article.about hr {
 }
 
 a.close-overlay {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto;
-  z-index: 100;
-  width: 45px;
-  height: 45px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 45px;
-  text-align: center;
-  background-color: #000;
+  background-color: #fffffe;
+  color: #000001;
   cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 48px;
+  z-index: 100;
 }
 
 a.close-overlay.hidden {
@@ -7636,18 +7641,18 @@ a.close-overlay.hidden {
 }
 
 a.expand {
-  display: block;
-  position: absolute;
-  z-index: 100;
-  width: 60px;
-  height: 60px;
-  border: solid 5px #fff;
-  text-align: center;
-  color: #fff;
-  line-height: 50px;
-  font-weight: 700;
-  font-size: 30px;
   border-radius: 30px;
+  border: solid 5px #fff;
+  color: #fff;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  height: 60px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  z-index: 100;
 }
 
 #effect-4 .overlay {
