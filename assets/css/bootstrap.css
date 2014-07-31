@@ -7301,13 +7301,13 @@ header.container-fluid {
 .carousel {
   margin-bottom: 60px;
   margin-bottom: 10px;
-  max-height: 640px;
+  max-height: 750px;
   position: relative;
 }
 
 .carousel-inner .item {
-  height: 640px;
-  max-height: 640px;
+  height: 750px;
+  max-height: 750px;
   background-color: transparent;
 }
 .carousel-inner .item > img {
@@ -7316,7 +7316,7 @@ header.container-fluid {
   top: 0;
   left: 0;
   min-width: 100%;
-  max-height: 640px;
+  max-height: 750px;
 }
 .carousel-inner .item > .container-fluid > .carousel-caption,
 .carousel-inner .item > .container > .carousel-caption {
