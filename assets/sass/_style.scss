@@ -583,13 +583,12 @@ position: relative;
 
 .carousel-img-overlay {
 max-height: 60%;
+margin: 0 auto;
 position: absolute;
-top: 20%;
-left: 50%;
+top: 30px;
+left: 0;
+right: 0;
 z-index: 20;
--webkit-transform: translateY(-20%) translateX(-50%);
--moz-transform:    translateY(-20%) translateX(-50%);
-transform:         translateY(-20%) translateX(-50%);
 }
 
 // Carousel
@@ -838,12 +837,10 @@ padding-bottom: 0;
 .panel-three span.icon,
  .panel-four span.icon {
   margin-top: 48px;
-  
-  
-  
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  
-  }
 }
+ @media (max-width : 1170px) {  
+    .panel-one span.icon { margin-top: 48px; }
+  }
 
 
 // Help

@@ -7290,13 +7290,12 @@ header.container-fluid {
 
 .carousel-img-overlay {
   max-height: 60%;
+  margin: 0 auto;
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 30px;
+  left: 0;
+  right: 0;
   z-index: 20;
-  -webkit-transform: translateY(-20%) translateX(-50%);
-  -moz-transform: translateY(-20%) translateX(-50%);
-  transform: translateY(-20%) translateX(-50%);
 }
 
 .carousel {
@@ -7509,6 +7508,11 @@ article.about hr {
   margin-top: 48px;
 }
 
+@media (max-width: 1170px) {
+  .panel-one span.icon {
+    margin-top: 48px;
+  }
+}
 .help {
   background-color: #15aed8;
 }
