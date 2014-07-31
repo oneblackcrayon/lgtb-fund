@@ -585,7 +585,7 @@ position: relative;
 max-height: 60%;
 margin: 0 auto;
 position: absolute;
-top: 50px;
+top: 60px;
 left: 0;
 right: 0;
 z-index: 20;
@@ -595,13 +595,13 @@ z-index: 20;
 .carousel {
 margin-bottom: 60px;
 margin-bottom: 10px;
-max-height: 740px;
+max-height: 640px;
 position: relative;
 }
 .carousel-inner {
   .item {
-      height: 740px;
-      max-height: 740px;
+      height: 640px;
+      max-height: 640px;
       background-color: transparent;
   }
   .item > img {
@@ -610,7 +610,7 @@ position: relative;
   top: 0;
   left: 0;
   min-width: 100%;
-  max-height: 740px;
+  max-height: 640px;
 
   }
   .item > .container-fluid > .carousel-caption,
@@ -674,7 +674,7 @@ font: {
 }
 height: 60px;
 position: relative;
-top: 0px;
+top: -50px;
 text-align: center;
 z-index: 20;
   & a {
