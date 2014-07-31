@@ -7299,43 +7299,37 @@ header.container-fluid {
 }
 
 .carousel {
+  margin-bottom: 60px;
+  margin-bottom: 10px;
+  max-height: 640px;
   position: relative;
 }
 
-.carousel-inner .item > img {
-  margin: auto;
-}
-.carousel-inner .item > .container-fluid > .carousel-caption,
-.carousel-inner .item > .container > .carousel-caption {
-  display: inline-block;
-  font-size: 37px;
-  bottom: 68%;
-  text-shadow: none;
-}
-
-/* Carousel base class */
-.carousel {
-  max-height: 640px;
-  margin-bottom: 10px;
-}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
+.carousel-inner .item {
+  height: 640px;
   max-height: 640px;
   background-color: transparent;
 }
-
-.carousel-inner > .item > img {
+.carousel-inner .item > img {
+  margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   max-height: 640px;
+}
+.carousel-inner .item > .container-fluid > .carousel-caption,
+.carousel-inner .item > .container > .carousel-caption {
+  background-color: transparent;
+  bottom: 68%;
+  display: inline-block;
+  font-size: 37px;
+  margin-top: 540px;
+  max-width: 550px;
+  padding: 0 20px;
+  position: static;
+  text-shadow: none;
+  z-index: 10;
 }
 
 .carousel-indicators {
