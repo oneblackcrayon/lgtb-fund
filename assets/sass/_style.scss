@@ -329,6 +329,12 @@ article {
 .facebook-icon.menu-icon {
   position: absolute;
   bottom: 30%; right: 25%; left: 25%;
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
+  bottom: 10%; 
+  }
+  
 }
 
 
@@ -343,6 +349,8 @@ article {
   //z-index: 6;
 
    @media (max-width:767px) {
+   
+   
   }
 }
 
@@ -563,8 +571,6 @@ body.nav-pushes-body {
   left: 5%;
   transition: left 250ms ease-in-out 0s;
 }
- 
-
 
 // Header
 
@@ -832,7 +838,11 @@ padding-bottom: 0;
 .panel-three span.icon,
  .panel-four span.icon {
   margin-top: 48px;
-
+  
+  
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  
+  }
 }
 
 
@@ -980,10 +990,7 @@ aside.supporters {
         -webkit-transform: translateY(-25%) translateX(0%);
         -moz-transform: translateY(-25%) translateX(0%);
         transform: translateY(-25%) translateX(0%);
-        
-        
-        
-        
+
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
         box-sizing: border-box;
         height: 200px;
@@ -1011,9 +1018,7 @@ aside.supporters {
            -moz-transform: translateY(0) translateX(0);
                 transform: translateY(0) translateX(0);
         }
-        
-        
-        
+
         & h3 {
           font: {
           family: "brandon-grotesque", $font-family-sans-serif;
@@ -1036,7 +1041,6 @@ aside.supporters {
           }
           margin-bottom: 20px;
         }
-        
       }
     }
   }

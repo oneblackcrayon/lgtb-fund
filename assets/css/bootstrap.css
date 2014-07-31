@@ -6995,6 +6995,11 @@ article.container-fluid p a {
   right: 25%;
   left: 25%;
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .facebook-icon.menu-icon {
+    bottom: 10%;
+  }
+}
 
 .logo {
   display: block;
