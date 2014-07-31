@@ -718,6 +718,11 @@ article.about {
 background-color: $brand-background-color;
 color: $brand-text-color;
 padding-bottom: 0;
+
+@media (min-width: 1200px) and (max-width: 2500px) {
+  padding-top: 37px;
+}
+
   h1, h2, h3, h4, h5, h6, blockquote, cite, dl, ul, ol {
     color: $royal-blue-color;
   }
