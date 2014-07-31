@@ -7651,7 +7651,7 @@ aside.supporters .img .overlay figcaption {
     box-sizing: border-box;
     height: 200px;
     width: 200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 12px;
     position: relative;
     top: 0;
@@ -7661,9 +7661,25 @@ aside.supporters .img .overlay figcaption {
     transform: translateY(0) translateX(0);
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  aside.supporters .img .overlay figcaption {
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 18px;
+    position: relative;
+    top: 0px;
+    left: 0;
+    -webkit-transform: translateY(0) translateX(0);
+    -moz-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+  }
+}
 aside.supporters .img .overlay figcaption h3 {
   font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
+  margin-top: 0;
 }
 aside.supporters .img .overlay figcaption p {
   font-family: "freight-text-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
