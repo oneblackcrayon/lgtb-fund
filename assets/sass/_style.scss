@@ -619,8 +619,8 @@ position: relative;
     bottom: 68%;  
     display: inline-block;
     font-size: 37px;
-    margin-top: 540px;
-    max-width: 550px;
+    margin-top: 600px;
+    width: 100%;
     padding: 0 20px;
     //position: relative;
     position: static;
@@ -640,7 +640,7 @@ position: relative;
 }
 
 .carousel-indicators {
-    top: 80%;
+    top: 90%;
     height: 20px;
 
     & > li {
