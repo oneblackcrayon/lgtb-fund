@@ -7553,6 +7553,11 @@ article.about hr {
   font-size: 16px;
 }
 
+@media (min-width: 1200px) and (max-width: 2500px) {
+  .slide-padding > h3:first-child {
+    margin-bottom: 51px;
+  }
+}
 .on {
   background-color: #deeff2;
 }
