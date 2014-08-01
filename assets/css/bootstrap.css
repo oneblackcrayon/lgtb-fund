@@ -7564,7 +7564,7 @@ article.about hr {
   background-color: #deeff2;
 }
 
-.off > p {
+.off > .sliding-panel > p {
   padding: 0 20px;
   position: absolute;
   top: 288px;
