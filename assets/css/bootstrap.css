@@ -7639,7 +7639,7 @@ a.close-overlay {
   font-weight: 700;
   height: 50px;
   line-height: 50px;
-  margin: 0 auto;
+  margin: 12px auto 0;
   position: relative;
   text-align: center;
   vertical-align: middle;
