@@ -7729,7 +7729,7 @@ aside.supporters .img .overlay figcaption {
     margin: 0 auto;
     padding: 12px;
     position: relative;
-    top: 0;
+    top: 25%;
     left: 0;
     -webkit-transform: translateY(0) translateX(0);
     -moz-transform: translateY(0) translateX(0);
