@@ -890,20 +890,6 @@ padding-bottom: 0;
     left: 25%;
     right: 25%;
   }
-
-  & .off > p {
-    padding: 0 20px;
-    position: absolute;
-    top: 288px;
-    left: 5%;
-    right: 5%;
-  }
-}
-
-.panel-one span.icon,
-.panel-two span.icon,
-.panel-three span.icon,
-.panel-four span.icon {
 }
 
 .off,
@@ -911,6 +897,19 @@ padding-bottom: 0;
 } 
 .on {
   background-color: $slider-background-color;
+}
+.off > p {
+  padding: 0 20px;
+  position: absolute;
+  top: 288px;
+  left: 5%;
+  right: 5%;
+}
+
+.panel-one span.icon,
+.panel-two span.icon,
+.panel-three span.icon,
+.panel-four span.icon {
 }
 
 
