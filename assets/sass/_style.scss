@@ -1063,6 +1063,7 @@ aside.supporters {
         transform: translateY(-25%) translateX(0%);
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        background: pink;
         box-sizing: border-box;
         height: 200px;
         width: 200px;

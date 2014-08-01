@@ -7722,6 +7722,7 @@ aside.supporters .img .overlay figcaption {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   aside.supporters .img .overlay figcaption {
+    background: pink;
     box-sizing: border-box;
     height: 200px;
     width: 200px;
