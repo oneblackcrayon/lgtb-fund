@@ -7542,7 +7542,7 @@ article.about hr {
 }
 .slide-padding h3, .slide-padding span.icon, .slide-padding p {
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   text-align: center;
 }
 .slide-padding > h3 {
@@ -7553,26 +7553,18 @@ article.about hr {
   font-size: 16px;
 }
 
-@media (min-width: 1170px) and (max-width: 2500px) {
-  .slide-padding > h3:first-child {
-    margin-bottom: 51px;
-  }
-}
 .on {
   background-color: #deeff2;
 }
 
+.panel-one span.icon,
 .panel-two span.icon,
 .panel-three span.icon,
 .panel-four span.icon {
-  margin-top: 48px;
+  position: relative;
+  top: 168px;
 }
 
-@media (max-width: 1170px) {
-  .panel-one span.icon {
-    margin-top: 48px;
-  }
-}
 .help {
   background-color: #15aed8;
 }
@@ -7722,7 +7714,6 @@ aside.supporters .img .overlay figcaption {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   aside.supporters .img .overlay figcaption {
-    background: pink;
     box-sizing: border-box;
     height: 200px;
     width: 300px;

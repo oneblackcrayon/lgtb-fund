@@ -870,7 +870,7 @@ padding-bottom: 0;
   & span.icon,
   & p {
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -886,14 +886,6 @@ padding-bottom: 0;
 }
 
 
-@media (min-width: 1170px) and (max-width: 2500px) {
-  .slide-padding > h3:first-child {
-    margin-bottom: 51px;
-  }
-}
-
-
-
 .off,
 .on {
 } 
@@ -901,14 +893,13 @@ padding-bottom: 0;
   background-color: $slider-background-color;
 }
 
+  .panel-one span.icon,
   .panel-two span.icon,
 .panel-three span.icon,
  .panel-four span.icon {
-  margin-top: 48px;
+ position: relative;
+  top: 168px;
 }
- @media (max-width : 1170px) {  
-    .panel-one span.icon { margin-top: 48px; }
-  }
 
 
 // Help
@@ -1063,7 +1054,6 @@ aside.supporters {
         transform: translateY(-25%) translateX(0%);
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-        background: pink;
         box-sizing: border-box;
         height: 200px;
         width: 300px;
