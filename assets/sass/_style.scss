@@ -897,9 +897,10 @@ padding-bottom: 0;
   .panel-two span.icon,
 .panel-three span.icon,
  .panel-four span.icon {
- position: relative;
+  position: absolute;
   top: 168px;
-}
+  margin: 0 auto;
+  }
 
 
 // Help
