@@ -7560,8 +7560,11 @@ article.about hr {
   right: 25%;
 }
 .slide-padding p {
+  padding: 0 20px;
   position: absolute;
   top: 228px;
+  left: 25%;
+  right: 25%;
 }
 
 .on {
