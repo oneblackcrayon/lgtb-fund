@@ -7552,18 +7552,20 @@ article.about hr {
   font-weight: 700;
   font-size: 16px;
 }
-
-.on {
-  background-color: #deeff2;
-}
-
-.panel-one span.icon,
-.panel-two span.icon,
-.panel-three span.icon,
-.panel-four span.icon {
+.slide-padding span.icon {
   position: absolute;
   top: 168px;
   margin: 0 auto;
+  left: 25%;
+  right: 25%;
+}
+.slide-padding p {
+  position: relative;
+  top: 30px;
+}
+
+.on {
+  background-color: #deeff2;
 }
 
 .help {

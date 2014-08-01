@@ -873,7 +873,6 @@ padding-bottom: 0;
     margin: 0 auto;
     text-align: center;
   }
-
   & > h3 {
     margin-top: -60px;
     text-decoration: upppercase;
@@ -883,8 +882,26 @@ padding-bottom: 0;
       size: 16px;
     }
   }
+
+  & span.icon {
+    position: absolute;
+    top: 168px;
+    margin: 0 auto;
+    left: 25%;
+    right: 25%;
+  }
+
+  & p {
+    position: relative;
+    top: 30px;
+  }
 }
 
+.panel-one span.icon,
+.panel-two span.icon,
+.panel-three span.icon,
+.panel-four span.icon {
+}
 
 .off,
 .on {
@@ -893,14 +910,9 @@ padding-bottom: 0;
   background-color: $slider-background-color;
 }
 
-  .panel-one span.icon,
-  .panel-two span.icon,
-.panel-three span.icon,
- .panel-four span.icon {
-  position: absolute;
-  top: 168px;
-  margin: 0 auto;
-  }
+
+
+
 
 
 // Help
