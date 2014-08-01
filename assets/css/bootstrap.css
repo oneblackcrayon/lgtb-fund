@@ -7560,16 +7560,20 @@ article.about hr {
   right: 25%;
 }
 
-.on {
-  background-color: #deeff2;
-}
-
 .off p {
   padding: 0 20px;
   position: absolute;
   top: 288px;
   left: 5%;
   right: 5%;
+}
+
+.on {
+  background-color: #deeff2;
+}
+
+.on h3 {
+  margin-bottom: 60px;
 }
 
 .help {

@@ -894,9 +894,6 @@ padding-bottom: 0;
 
 .off,
 .on {
-} 
-.on {
-  background-color: $slider-background-color;
 }
 .off p {
   padding: 0 20px;
@@ -904,6 +901,12 @@ padding-bottom: 0;
   top: 288px;
   left: 5%;
   right: 5%;
+}
+.on {
+  background-color: $slider-background-color;
+}
+.on h3 {
+margin-bottom: 60px;
 }
 
 .panel-one span.icon,
