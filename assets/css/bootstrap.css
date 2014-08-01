@@ -7633,19 +7633,26 @@ article.about hr {
 
 a.close-overlay {
   background-color: #fffffe;
-  color: #000001;
   cursor: pointer;
   display: inline-block;
   font-size: 24px !important;
   font-weight: 700;
-  height: 46px;
-  line-height: 46px;
+  height: 50px;
+  line-height: 50px;
   margin: 0 auto;
   position: relative;
   text-align: center;
   vertical-align: middle;
-  width: 48px;
+  width: 50px;
   z-index: 100;
+}
+a.close-overlay img {
+  display: block;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  text-align: center;
 }
 
 .effects figcaption a.close-overlay {
