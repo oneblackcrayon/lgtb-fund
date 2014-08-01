@@ -7729,11 +7729,11 @@ aside.supporters .img .overlay figcaption {
     margin: 0 auto;
     padding: 12px;
     position: relative;
-    top: 25%;
+    top: 24px;
     left: 0;
-    -webkit-transform: translateY(0) translateX(0);
-    -moz-transform: translateY(0) translateX(0);
-    transform: translateY(0) translateX(0);
+    -webkit-transform: translateY(24px) translateX(0);
+    -moz-transform: translateY(24px) translateX(0);
+    transform: translateY(24px) translateX(0);
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
