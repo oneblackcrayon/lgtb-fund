@@ -663,6 +663,45 @@ position: relative;
 }
 
 
+// The Slides
+.slide-1 {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    background: url(assets/images/LGBT-Slide-1-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    background: url(assets/images/LGBT-Slide-1-640.jpg) no-repeat left top;
+    //background-size: cover;
+  }
+}
+
+.slide-2 {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    background: url(assets/images/LGBT-Slide-2-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    background: url(assets/images/LGBT-Slide-2-640.jpg) no-repeat left top;
+    //background-size: cover;
+  }
+}
+
+.slide-3 {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    background: url(assets/images/LGBT-Slide-3-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    background: url(assets/images/LGBT-Slide-3-640.jpg) no-repeat left top;
+    //background-size: cover;
+  }
+}
+
+
+
 // ScrollTo Arrow
 
 .scroll-arrow {
