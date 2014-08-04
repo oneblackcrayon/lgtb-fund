@@ -588,6 +588,10 @@ top: 60px;
 left: 0;
 right: 0;
 z-index: 20;
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    top: 120px;
+  }
 }
 
 // Carousel

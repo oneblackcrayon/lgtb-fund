@@ -7305,6 +7305,11 @@ header.container-fluid {
   right: 0;
   z-index: 20;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .carousel-img-overlay {
+    top: 120px;
+  }
+}
 
 .carousel {
   margin-bottom: 60px;
