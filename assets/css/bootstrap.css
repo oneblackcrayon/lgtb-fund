@@ -7410,7 +7410,7 @@ header.container-fluid {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   .slide-3 {
     background: url(../images/LGBT-Slide-3-640.jpg) no-repeat center top;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
