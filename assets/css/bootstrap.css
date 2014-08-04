@@ -7363,6 +7363,48 @@ header.container-fluid {
   width: 12px;
 }
 
+.slide-1style {
+  background-image: none;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .slide-1 {
+    background: url(assets/images/LGBT-Slide-1-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .slide-1 {
+    background: url(assets/images/LGBT-Slide-1-640.jpg) no-repeat center top;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .slide-2 {
+    background: url(assets/images/LGBT-Slide-2-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .slide-2 {
+    background: url(assets/images/LGBT-Slide-2-640.jpg) no-repeat center top;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .slide-3 {
+    background: url(assets/images/LGBT-Slide-3-1024.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  .slide-3 {
+    background: url(assets/images/LGBT-Slide-3-640.jpg) no-repeat center top;
+    background-size: contain;
+  }
+}
+
 .scroll-arrow {
   color: #acacac;
   display: inline-block;

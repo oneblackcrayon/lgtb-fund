@@ -665,6 +665,9 @@ position: relative;
 
 // The Slides
 .slide-1 {
+  &style {
+    background-image: none;
+  }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     background: url(assets/images/LGBT-Slide-1-1024.jpg) no-repeat center center;
     background-size: cover;
