@@ -675,7 +675,7 @@ position: relative;
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
     background: url(../images/LGBT-Slide-1-640.jpg) no-repeat center top;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -690,7 +690,7 @@ position: relative;
   
   @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
     background: url(../images/LGBT-Slide-2-640.jpg) no-repeat center top;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
